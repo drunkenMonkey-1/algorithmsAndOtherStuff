@@ -88,6 +88,11 @@ public class SearchAlgorithm {
         return i;
     }
 
+    /**
+     *
+     * @param input
+     * @return
+     */
     public int[] selectionSort(int[] input){
 
         for(int i = 0; i < input.length; i++){
