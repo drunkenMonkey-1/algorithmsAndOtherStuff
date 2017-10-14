@@ -1,3 +1,5 @@
+package fhv.at.mwi.algorithm_tests;
+
 public class Compression {
 
     public Compression(){
