@@ -1,4 +1,6 @@
-package fhv.at.mwi.algorithm_tests;
+package fhv.at.mwi.sorting_algorithms;
+
+import fhv.at.mwi.analysis.AlgorithmAnalysis;
 
 public class SortingAlgorithm {
     private AlgorithmAnalysis analysis;
@@ -89,7 +91,7 @@ public class SortingAlgorithm {
 
     /**
      * Get number of operations from the last executed algorithm
-     * @return fhv.at.mwi.algorithm_tests.AlgorithmAnalysis
+     * @return fhv.at.mwi.analysis.AlgorithmAnalysis
      */
     public AlgorithmAnalysis getAnalysis() {
         return analysis;

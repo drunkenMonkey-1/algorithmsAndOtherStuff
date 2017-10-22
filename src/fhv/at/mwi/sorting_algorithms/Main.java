@@ -1,4 +1,6 @@
-package fhv.at.mwi.algorithm_tests;
+package fhv.at.mwi.sorting_algorithms;
+
+import fhv.at.mwi.compression.Compression;
 
 public class Main {
 

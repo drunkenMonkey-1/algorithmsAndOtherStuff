@@ -1,7 +1,7 @@
 package tests;
 
-import fhv.at.mwi.algorithm_tests.SearchAlgorithm;
-import fhv.at.mwi.algorithm_tests.SortingAlgorithm;
+import fhv.at.mwi.search_algorithms.SearchAlgorithm;
+import fhv.at.mwi.sorting_algorithms.SortingAlgorithm;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
