@@ -11,7 +11,7 @@ public class QualityControl {
 
     private SimpleMap[][] _pattern;
 
-    private int _matches;
+    private int _matches = 0;
     private Position _startPosition;
 
     public QualityControl(SimpleMap[][] pattern){
@@ -41,7 +41,7 @@ public class QualityControl {
         int validNeighbours = 0;
         LinkedList<Position> nextPos = new LinkedList<Position>();
         _pattern[me.get_x()][me.get_y()].set_used(true);
-        System.out.println("matrix search start");
+        System.out.println("-- matrix search start");
         for(int x = me.get_x()-1; x <= me.get_x()+1; x++){
             for(int y = me.get_y()-1; y <= me.get_y()+1; y++){
                 Position currentPos = new Position(x, y);
