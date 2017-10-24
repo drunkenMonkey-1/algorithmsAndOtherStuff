@@ -15,10 +15,20 @@ class HashTableTest {
     void testHash(){
         MHashTable<String, Integer> testTable = new MHashTable(CollisionStrategy.DOUBLE_HASHING);
         testTable.put("Moritz", 5);
-        testTable.put("Moritz", 6);
-        testTable.put("Moritz", 7);
-        testTable.put("Moritz", 8);
+        testTable.put("Pete", 6);
+        testTable.put("Walther White", 7);
+        testTable.put("Sanchez", 8);
+        testTable.put("Sanchez2", 8);
+        testTable.put("Sanchez3", 8);
+        testTable.put("Sanchez4", 8);
+        testTable.put("Sanchez5", 8);
+        testTable.put("Wiz Khalifa", 8);
+        testTable.put("Snoop Dogg", 8);
+        testTable.put("Kendrick Lamar", 8);
         testTable.debugList();
+
+        testTable.get("Moritz");
+
     }
 
 }

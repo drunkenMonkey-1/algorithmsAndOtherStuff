@@ -12,6 +12,7 @@ public class MHashTable<K, V> implements Map<K, V> {
     private int _collisions = 0;
     private int jumpMultiplicator;
     private int _initHash;
+    private float _resizeTrigger = 0.75f;
     private AltHash _altHash;
     private CollisionStrategy _strategy;
 
@@ -21,9 +22,9 @@ public class MHashTable<K, V> implements Map<K, V> {
     public MHashTable(){
         _dummyElement = new Object();
         _numOfElements = 0;
-        _currentMaxSize = 16;
+        _currentMaxSize = 13;       // first prime
         jumpOffset = 0;
-        _values = new ArrayList<V>(Collections.nCopies(_currentMaxSize, null));
+        _values = new ArrayList<TableEntry<K, V>>(Collections.nCopies(_currentMaxSize, null));
         _strategy = CollisionStrategy.DOUBLE_HASHING;
         //Default must be 1 or sth.
         _altHash = hashValue -> 1;
@@ -62,11 +63,18 @@ public class MHashTable<K, V> implements Map<K, V> {
 
     @Override
     public V get(Object key) {
+        _initHash = key.hashCode();
+        int insertIndex = getNextFreePos(0, null);
+        System.out.println("Should be at: " + insertIndex);
         return null;
     }
 
     @Override
     public V put(K key, V value) {
+        float filledBy = (float) _numOfElements / _currentMaxSize;
+        if(filledBy >= _resizeTrigger){
+            resizeDataStructure();
+        }
         _initHash = key.hashCode();
         int insertIndex = getNextFreePos(0, _dummyElement);
         _values.set(insertIndex, value);
@@ -119,15 +127,61 @@ public class MHashTable<K, V> implements Map<K, V> {
         }
     }
 
+    private boolean isPrime(int num){
+        if((num % 2) == 0 || (num % 3) == 0){
+            return false;
+        }
+        for(int i = 5; i < Math.sqrt(num); i+=2){
+            if(num % i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * find the next bigger prime number starting from the passed parameter
+     * @param start Start search at this number
+     * @return the next prime number after start
+     */
+    private int findNextPrime(int start){
+        if(start % 2 == 0){
+            start+=1;
+        }
+        if(isPrime(start)){
+            return start;
+        }
+        for(int i = 2; i <= start * 2; i++){
+            if(isPrime(start + i)){
+                return (start + i);
+            }
+        }
+        return findNextPrime((start * 2) +1 );
+    }
+
+    private void resizeDataStructure(){
+        _currentMaxSize = findNextPrime(_currentMaxSize * 2);
+        List tempList = new ArrayList<V>(Collections.nCopies(_currentMaxSize, null));
+        Iterator i = _values.iterator();
+        int iteratorCount = 0;
+        while(i.hasNext()){
+            tempList.set(iteratorCount, i.next());
+            iteratorCount++;
+        }
+        _values = tempList;
+
+    }
+
     private int getPosByHash(int hashCode, int m){
         return Math.abs(hashCode) % m;
     }
 
     private int getNextFreePos(int offset, Object dummy){
-        System.out.println("Jumping by " + offset);
         int realPos = getPosByHash(_initHash + offset, _currentMaxSize);
+        System.out.println("Jumping by " + offset + " from " + realPos);
         if(_values.get(realPos) == null || _values.get(realPos) == dummy){
             _collisions = 0;
+            System.out.println(" - - ");
             return realPos;
         } else {
             _collisions++;
@@ -146,14 +200,15 @@ public class MHashTable<K, V> implements Map<K, V> {
 
     @Override
     public String toString(){
-        return "";
+        return "Current size: " + _currentMaxSize + " | n. of elements: " + _numOfElements;
     }
 
     public void debugList(){
         Iterator i = _values.iterator();
         while(i.hasNext()){
-            System.out.println(i.next());
+            System.out.printf("%s|", i.next());
         }
         System.out.println("-- debug end --");
     }
+
 }
