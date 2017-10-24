@@ -19,15 +19,20 @@ class HashTableTest {
         testTable.put("Walther White", 7);
         testTable.put("Sanchez", 8);
         testTable.put("Sanchez2", 8);
-        testTable.put("Sanchez3", 8);
+        testTable.put("Sanchez500", 500);
         testTable.put("Sanchez4", 8);
         testTable.put("Sanchez5", 8);
-        testTable.put("Wiz Khalifa", 8);
-        testTable.put("Snoop Dogg", 8);
+        testTable.put("Wiz Khalifa", 187);
+        testTable.put("Snoop Dogg", 420);
         testTable.put("Kendrick Lamar", 8);
+
+        System.out.println(testTable.remove("Wiz Khalifa"));
+        System.out.println(testTable.get("Wiz Khalifa"));
+        testTable.put("Wiz Khalifa", 187);
+
         testTable.debugList();
 
-        testTable.get("Moritz");
+        testTable.clear();
 
     }
 
