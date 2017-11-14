@@ -1,0 +1,55 @@
+package fhv.at.mwi.tree_structure;
+
+import sun.awt.image.ImageWatched;
+
+import java.util.LinkedList;
+
+public abstract class Tree<V extends Comparable, T extends Node<V>> {
+
+    protected T _root;
+    protected LinkedList<V> outList;
+
+    public Tree(T root){
+        _root = root;
+    }
+
+
+    /**
+     * Output the tree structure by given strategy (OutputStrategy)
+     * @param s User defined output strategy (INORDER, POSTORDER, LVLBYLVL...)
+     * @return Linked List with the the tree values in the correct order as specified with OutputStrategy
+     */
+    public LinkedList outputTree(OutputStrategy s){
+        outList = new LinkedList();
+        switch(s){
+            case INORDER:
+                inorderOut(_root);
+                break;
+            case PREORDER:
+                preorderOut(_root);
+                break;
+            case POSTORDER:
+                postorderOut(_root);
+                break;
+            case LVLBYLVL:
+                lvlbylvlout(_root);
+                break;
+
+        }
+        return outList;
+    }
+
+    /**
+     * Compare two nodes by their value -> compare the node calling this method with nodeX
+     * @param nodeX Node 1
+     * @return returns zero if nodeX and this node are the same.
+     */
+    protected abstract int compareNodes(T nodeX);
+    protected abstract void inorderOut(T root);
+    protected abstract void postorderOut(T root);
+    protected abstract void preorderOut(T root);
+    protected abstract void lvlbylvlout(T root);
+    public abstract void autoInsert(V value);
+
+
+}

@@ -1,8 +1,6 @@
 package fhv.at.mwi.search_tree;
 
 import java.io.*;
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class SequenceReader {
 
@@ -40,7 +38,7 @@ public class SequenceReader {
      * Convert the array loaded from file to a linked tree
      * @return Root node of the tree
      */
-    public BinaryTree SequenceToTree(){
+    public BinNode SequenceToTree(){
        return setTree(1);
     }
 
@@ -50,8 +48,8 @@ public class SequenceReader {
      * @param index Index in the sequential tree
      * @return Root node
      */
-    private BinaryTree setTree(int index) {
-        BinaryTree<Integer> tRoot = new BinaryTree<>(_sequence[index]);
+    private BinNode setTree(int index) {
+        BinNode<Integer> tRoot = new BinNode<>(_sequence[index]);
         if (index < _sequence.length){
             int leftChild = 2 * index;
             int rightChild = (2 * index) + 1;

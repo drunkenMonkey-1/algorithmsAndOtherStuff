@@ -4,17 +4,17 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BinaryTree<T extends Comparable>  {
+public class BinNode<T extends Comparable>  {
 
-    private BinaryTree[] _nodes;
+    private BinNode[] _nodes;
     private T _value;
     private int _nodeLimit = 2;
     private LinkedList outList;
     private int _leaf;
 
 
-    public BinaryTree(T value) {
-        _nodes = new BinaryTree[_nodeLimit];
+    public BinNode(T value) {
+        _nodes = new BinNode[_nodeLimit];
         _value = value;
     }
 
@@ -22,9 +22,9 @@ public class BinaryTree<T extends Comparable>  {
         insertToBinaryTree(this, value);
     }
 
-    private BinaryTree insertToBinaryTree(BinaryTree root, T value){
+    private BinNode insertToBinaryTree(BinNode root, T value){
         if(root == null){
-            return new BinaryTree(value);
+            return new BinNode(value);
         }
         if(value.compareTo(root.getValue()) == 1){
             root.setRight(insertToBinaryTree(root.getRight(), value));
@@ -38,7 +38,7 @@ public class BinaryTree<T extends Comparable>  {
      * Set left node
      * @param n left node
      */
-    public void setLeft(BinaryTree n){
+    public void setLeft(BinNode n){
         _nodes[0] = n;
     }
 
@@ -46,7 +46,7 @@ public class BinaryTree<T extends Comparable>  {
      * Set right node
      * @param n right node
      */
-    public void setRight(BinaryTree n){
+    public void setRight(BinNode n){
         _nodes[1] = n;
     }
 
@@ -62,7 +62,7 @@ public class BinaryTree<T extends Comparable>  {
      * Get left node of the root node(me)
      * @return Left node
      */
-    public BinaryTree getLeft(){
+    public BinNode getLeft(){
         return _nodes[0];
     }
 
@@ -70,7 +70,7 @@ public class BinaryTree<T extends Comparable>  {
      * Get right node of the root node(me)
      * @return Right node
      */
-    public BinaryTree getRight() {
+    public BinNode getRight() {
         return _nodes[1];
     }
 
@@ -78,8 +78,8 @@ public class BinaryTree<T extends Comparable>  {
      * Convert the current binary tree to a binary search tree
      * @return Root node of the binary search tree
      */
-    public BinaryTree<T> convertBinaryToSearchTree(){
-        BinaryTree<T> searchTree = new BinaryTree<>(this.getValue());
+    public BinNode<T> convertBinaryToSearchTree(){
+        BinNode<T> searchTree = new BinNode<>(this.getValue());
         outList = new LinkedList();
         lvlbylvlout(this);
         Iterator lvlBylvlIterator = outList.iterator();
@@ -133,7 +133,7 @@ public class BinaryTree<T extends Comparable>  {
         return treeHeight(this);
     }
 
-    private int treeHeight(BinaryTree root){
+    private int treeHeight(BinNode root){
         if(root == null){
             return 0;
         } else {
@@ -143,7 +143,7 @@ public class BinaryTree<T extends Comparable>  {
 
     }
 
-    private void countLeafs(BinaryTree root){
+    private void countLeafs(BinNode root){
         if(root.getLeft() != null){
             countLeafs(root.getLeft());
         }
@@ -156,11 +156,11 @@ public class BinaryTree<T extends Comparable>  {
     }
 
 
-    private void lvlbylvlout(BinaryTree root){
-        Queue<BinaryTree> q = new LinkedList<>();
+    private void lvlbylvlout(BinNode root){
+        Queue<BinNode> q = new LinkedList<>();
         q.add(root);
         while(!q.isEmpty()){
-            BinaryTree tempNode = q.remove();
+            BinNode tempNode = q.remove();
             if(tempNode.getLeft() != null){
                 q.add(tempNode.getLeft());
             }
@@ -171,22 +171,22 @@ public class BinaryTree<T extends Comparable>  {
         }
     }
 
-    private  void preorderOut(BinaryTree root){
+    private  void preorderOut(BinNode root){
         if(root != null) {
             outList.add((T) root.getValue());
             preorderOut(root.getLeft());
             preorderOut(root.getRight());
         }
+    }
 
-    }
-    public  void inorderOut(BinaryTree root){
+    public  void inorderOut(BinNode root){
         if(root != null) {
             preorderOut(root.getLeft());
             outList.add((T) root.getValue());
             preorderOut(root.getRight());
         }
     }
-    public  void postorderOut(BinaryTree root){
+    public  void postorderOut(BinNode root){
         preorderOut(root.getLeft());
         preorderOut(root.getRight());
         outList.add((T) root.getValue());

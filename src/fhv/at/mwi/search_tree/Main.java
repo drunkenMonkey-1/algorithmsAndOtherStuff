@@ -8,13 +8,13 @@ public class Main {
     public static void main(String[] args){
         SequenceReader sr = new SequenceReader("sequence1.txt", "#");
 
-        BinaryTree<Integer> res = sr.SequenceToTree();
+        BinNode<Integer> res = sr.SequenceToTree();
 
         System.out.println("leafs: " + res.leafCount());
 
         System.out.println("height: " + res.getTreeHeight());
 
-        BinaryTree st = res.convertBinaryToSearchTree();
+        BinNode st = res.convertBinaryToSearchTree();
 
         res.insert(2);
         res.insert(1);
@@ -25,12 +25,12 @@ public class Main {
             System.out.println(li.next());
         }
 
-        BinaryTree<Character> decodeNode = new BinaryTree<>('+');
-        BinaryTree lnode = new BinaryTree('+');
-        lnode.setLeft(new BinaryTree('T'));
-        lnode.setRight(new BinaryTree('S'));
+        BinNode<Character> decodeNode = new BinNode<>('+');
+        BinNode lnode = new BinNode('+');
+        lnode.setLeft(new BinNode('T'));
+        lnode.setRight(new BinNode('S'));
         decodeNode.setLeft(lnode);
-        decodeNode.setRight(new BinaryTree('E'));
+        decodeNode.setRight(new BinNode('E'));
 
         Decoder d = new Decoder();
         System.out.println(d.decode(decodeNode, "1110011"));

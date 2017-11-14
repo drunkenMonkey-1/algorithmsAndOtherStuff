@@ -12,12 +12,12 @@ public class Decoder {
      * @param bits Encoded bits as string
      * @return Decoded bits as string
      */
-    public String decode(BinaryTree<Character> decodingTree, String bits){
+    public String decode(BinNode<Character> decodingTree, String bits){
         StringBuilder resultStr = new StringBuilder();
         int bitIndex = 0;
         for(int i = 0; i < bits.length(); i+=(bitIndex-i)) {
             bitIndex = i;
-            BinaryTree<Character> root = decodingTree;
+            BinNode<Character> root = decodingTree;
             while (root.getValue() == '+' && bitIndex < bits.length()) {
                 if (bits.charAt(bitIndex) == '0') {
                     root = root.getRight();
