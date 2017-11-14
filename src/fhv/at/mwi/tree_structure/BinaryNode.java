@@ -1,6 +1,5 @@
 package fhv.at.mwi.tree_structure;
 
-
 public class BinaryNode<V extends Comparable> extends Node<V>{
 
     public BinaryNode(V value){
@@ -24,4 +23,9 @@ public class BinaryNode<V extends Comparable> extends Node<V>{
         _children[1] = node;
         return getRight();
     }
+    @Override
+    protected int compareNodes(Node nodeX) {
+        return 0;
+    }
+
 }

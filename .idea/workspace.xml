@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e131d282-0f23-4c3f-bbef-955ae9acfb03" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/general/EasyMath.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryNode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/OutputStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Tree.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinarySearchTree.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/Decoder.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/Decoder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/Main.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/SequenceReader.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/SequenceReader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/BinaryTree.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/BinNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryNode.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryTree.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryTree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Main.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Node.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Node.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Tree.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Tree.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+            <state relative-caret-position="255">
+              <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -60,31 +55,33 @@
       <file leaf-file-name="Tree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Tree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="238">
+              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#257#258#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BinaryTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="340">
+              <caret line="84" column="37" lean-forward="true" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BinarySearchTree.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinarySearchTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding>
-                <element signature="e#272#273#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-                <element signature="e#379#380#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#1377#1378#0" expanded="true" />
-                <element signature="e#1427#1428#0" expanded="true" />
-                <element signature="e#2956#2957#0" expanded="true" />
-                <element signature="e#2983#2984#0" expanded="true" />
+                <element signature="e#138#139#0" expanded="true" />
+                <element signature="e#165#166#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,9 +90,12 @@
       <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="357">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <element signature="e#601#602#0" expanded="true" />
+                <element signature="e#640#641#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,8 +104,11 @@
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryNode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding>
+                <element signature="e#642#643#0" expanded="true" />
+                <element signature="e#666#667#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -202,14 +205,15 @@
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/Decoder.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/SequenceReader.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/BinaryTree.java" />
-        <option value="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Node.java" />
-        <option value="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryNode.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/general/EasyMath.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/BinNode.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/OutputStrategy.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Tree.java" />
-        <option value="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Main.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryNode.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Node.java" />
       </list>
     </option>
   </component>
@@ -240,9 +244,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,14 +304,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="fhv" type="462c0819:PsiDirectoryNode" />
               <item name="mwi" type="462c0819:PsiDirectoryNode" />
-              <item name="search_tree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithmsAndOtherStuff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithmsAndOtherStuff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fhv" type="462c0819:PsiDirectoryNode" />
-              <item name="mwi" type="462c0819:PsiDirectoryNode" />
               <item name="tree_structure" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -320,7 +316,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -550,6 +546,7 @@
       <workItem from="1510140177016" duration="1045000" />
       <workItem from="1510512656825" duration="4289000" />
       <workItem from="1510595378240" duration="17034000" />
+      <workItem from="1510689617737" duration="4468000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1507895132040</created>
@@ -594,7 +591,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159764000" />
+    <option name="totallyTimeSpent" value="164232000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -616,20 +613,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21527041" sideWeight="0.4671875" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21527041" sideWeight="0.5328125" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997879" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -637,6 +633,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49583334" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -661,13 +658,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/search_algorithms/SearchAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3075">
-          <caret line="123" column="20" lean-forward="false" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/sorting_algorithms/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -901,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -925,7 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,14 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -969,26 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Tree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/search_tree/BinNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2205">
@@ -999,28 +959,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-          <folding />
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#138#139#0" expanded="true" />
+            <element signature="e#165#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Tree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="340">
+          <caret line="84" column="37" lean-forward="true" selection-start-line="84" selection-start-column="37" selection-end-line="84" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/BinaryNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#272#273#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#1377#1378#0" expanded="true" />
-            <element signature="e#1427#1428#0" expanded="true" />
-            <element signature="e#2956#2957#0" expanded="true" />
-            <element signature="e#2983#2984#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#601#602#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/tree_structure/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

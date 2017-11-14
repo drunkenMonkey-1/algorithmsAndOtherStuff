@@ -4,10 +4,10 @@ import sun.awt.image.ImageWatched;
 
 import java.util.LinkedList;
 
-public abstract class Tree<V extends Comparable, T extends Node<V>> {
+public abstract class Tree<T extends Node> {
 
     protected T _root;
-    protected LinkedList<V> outList;
+    protected LinkedList outList;
 
     public Tree(T root){
         _root = root;
@@ -39,17 +39,12 @@ public abstract class Tree<V extends Comparable, T extends Node<V>> {
         return outList;
     }
 
-    /**
-     * Compare two nodes by their value -> compare the node calling this method with nodeX
-     * @param nodeX Node 1
-     * @return returns zero if nodeX and this node are the same.
-     */
-    protected abstract int compareNodes(T nodeX);
+
     protected abstract void inorderOut(T root);
     protected abstract void postorderOut(T root);
     protected abstract void preorderOut(T root);
     protected abstract void lvlbylvlout(T root);
-    public abstract void autoInsert(V value);
+    public abstract void autoInsert(T value);
 
 
 }

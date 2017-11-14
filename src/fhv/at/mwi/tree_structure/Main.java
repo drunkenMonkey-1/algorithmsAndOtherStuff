@@ -5,12 +5,12 @@ import java.util.Iterator;
 public class Main {
 
     public static void main(String[] args){
-        BinaryTree<Integer, BinaryNode<Integer>> binTree = new BinaryTree<>(4);
-        binTree.autoInsert(7);
-        binTree.autoInsert(1);
-        binTree.autoInsert(3);
+        BinaryTree binTree = new BinaryTree(new BinaryNode<>(4));
+        binTree.autoInsert(new BinaryNode<>(7));
+        binTree.autoInsert(new BinaryNode<>(1));
+        binTree.autoInsert(new BinaryNode<>(3));
 
-        Iterator outIt = binTree.outputTree(OutputStrategy.PREORDER).iterator();
+        Iterator outIt = binTree.outputTree(OutputStrategy.POSTORDER).iterator();
         while(outIt.hasNext()){
             System.out.println(outIt.next());
         }
