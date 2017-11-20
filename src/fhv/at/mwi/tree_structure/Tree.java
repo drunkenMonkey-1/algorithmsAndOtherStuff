@@ -1,13 +1,11 @@
 package fhv.at.mwi.tree_structure;
 
-import sun.awt.image.ImageWatched;
-
 import java.util.LinkedList;
 
 public abstract class Tree<T extends Node> {
 
     protected T _root;
-    protected LinkedList outList;
+    protected static LinkedList<MetaNode> outList;
 
     public Tree(T root){
         _root = root;
@@ -19,8 +17,8 @@ public abstract class Tree<T extends Node> {
      * @param s User defined output strategy (INORDER, POSTORDER, LVLBYLVL...)
      * @return Linked List with the the tree values in the correct order as specified with OutputStrategy
      */
-    public LinkedList outputTree(OutputStrategy s){
-        outList = new LinkedList();
+    public LinkedList<MetaNode> outputTree(OutputStrategy s){
+        outList = new LinkedList<>();
         switch(s){
             case INORDER:
                 inorderOut(_root);
@@ -39,12 +37,44 @@ public abstract class Tree<T extends Node> {
         return outList;
     }
 
+    /**
+     * Inorder output
+     * @param root Root node of the tree or subtree.
+     */
+    private void inorderOut(Node root) {
+        root.inorderOut(root, outList);
+    }
 
-    protected abstract void inorderOut(T root);
-    protected abstract void postorderOut(T root);
-    protected abstract void preorderOut(T root);
-    protected abstract void lvlbylvlout(T root);
+    /**
+     * Postorder output
+     * @param root Root node of the tree or subtree.
+     */
+    private void postorderOut(Node root) {
+        root.postorderOut(root, outList);
+    }
+
+    /**
+     * Preorder output
+     * @param root Root node of the tree or subtree.
+     */
+    private void preorderOut(Node root) {
+        root.preorderOut(root, outList);
+    }
+
+    /**
+     * Level by level output
+     * @param root Root node of the tree or subtree.
+     */
+    private void lvlbylvlout(Node root) {
+        root.lvlbylvlOut(root, outList);
+    }
+
+    /**
+     * Decides how a node is inserted to tree structure
+     * @param value Node to insert
+     */
     public abstract void autoInsert(T value);
+    public abstract int getRBHeight();
 
 
 }

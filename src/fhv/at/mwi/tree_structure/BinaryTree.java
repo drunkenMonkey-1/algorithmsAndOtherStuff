@@ -2,6 +2,7 @@ package fhv.at.mwi.tree_structure;
 
 import fhv.at.mwi.general.EasyMath;
 
+
 public class BinaryTree extends Tree<BinaryNode>{
 
     private int _currentInsertLevel = 1;
@@ -12,44 +13,15 @@ public class BinaryTree extends Tree<BinaryNode>{
     }
 
 
-    @Override
-    protected void inorderOut(BinaryNode root) {
-        BinaryNode bRoot = root;
-        if(bRoot != null) {
-            inorderOut(bRoot.getLeft());
-            outList.add(bRoot.getValue());
-            inorderOut(bRoot.getRight());
-        }
-    }
-
-    @Override
-    protected void postorderOut(BinaryNode root) {
-        BinaryNode bRoot = root;
-        if(bRoot != null) {
-            postorderOut( bRoot.getLeft());
-            postorderOut( bRoot.getRight());
-            outList.add( bRoot.getValue());
-        }
-    }
-
-    @Override
-    protected void preorderOut(BinaryNode root) {
-        BinaryNode bRoot = root;
-        if(bRoot != null) {
-            outList.add(bRoot.getValue());
-            preorderOut(bRoot.getLeft());
-            preorderOut(bRoot.getRight());
-        }
-    }
-
-    @Override
-    protected void lvlbylvlout(BinaryNode root) {
-
-    }
 
     @Override
     public void autoInsert(BinaryNode inNode) {
         insertAtPath(getNextPath(), inNode);
+    }
+
+    @Override
+    public int getRBHeight() {
+        return 0;
     }
 
     /**

@@ -6,28 +6,15 @@ public class BinarySearchTree extends Tree<BinaryNode>{
         super(root);
     }
 
-    @Override
-    protected void inorderOut(BinaryNode root) {
 
-    }
-
-    @Override
-    protected void postorderOut(BinaryNode root) {
-
-    }
-
-    @Override
-    protected void preorderOut(BinaryNode root) {
-
-    }
-
-    @Override
-    protected void lvlbylvlout(BinaryNode root) {
-
-    }
 
     @Override
     public void autoInsert(BinaryNode value) {
 
+    }
+
+    @Override
+    public int getRBHeight() {
+        return 0;
     }
 }
