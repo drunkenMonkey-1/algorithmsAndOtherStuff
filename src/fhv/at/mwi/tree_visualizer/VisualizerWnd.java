@@ -1,11 +1,13 @@
 package fhv.at.mwi.tree_visualizer;
 
 import javafx.application.Application;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.ScrollEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
@@ -55,8 +57,28 @@ public class VisualizerWnd extends Application {
         Group controlGroup = ribbonControls.getControlsGroup();
         Group board =_vsBoard.getTreeGroup();
 
+
+
         VBox combi = new VBox(controlGroup, board);
         Scene scene = new Scene(combi, WND_WIDTH, WND_HEIGHT, Color.TRANSPARENT);
+
+        combi.setOnScroll(new EventHandler<ScrollEvent>() {
+            @Override public void handle(ScrollEvent event) {
+                event.consume();
+
+                if (event.getDeltaY() == 0) {
+                    return;
+                }
+
+                double scaleFactor =
+                        (event.getDeltaY() > 0)
+                                ? 1.1
+                                : 1/1.1;
+
+                board.setScaleX(board.getScaleX() * scaleFactor);
+                board.setScaleY(board.getScaleY() * scaleFactor);
+            }
+        });
 
         primaryStage.setTitle(_title);
         primaryStage.setScene(scene);
