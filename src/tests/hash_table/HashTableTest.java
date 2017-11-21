@@ -1,4 +1,4 @@
-package tests;
+package tests.hash_table;
 
 import com.sun.org.apache.xpath.internal.operations.Bool;
 import fhv.at.mwi.hash_table.CollisionStrategy;

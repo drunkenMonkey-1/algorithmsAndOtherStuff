@@ -24,6 +24,8 @@ public class BinaryTree extends Tree<BinaryNode>{
         return 0;
     }
 
+
+
     /**
      * Get the binary path by the last insert index (=decimal representation of the path) and
      * the current max. tree level

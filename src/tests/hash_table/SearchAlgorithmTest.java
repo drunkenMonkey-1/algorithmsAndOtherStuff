@@ -1,4 +1,4 @@
-package tests;
+package tests.hash_table;
 
 import fhv.at.mwi.search_algorithms.SearchAlgorithm;
 import fhv.at.mwi.sorting_algorithms.SortingAlgorithm;

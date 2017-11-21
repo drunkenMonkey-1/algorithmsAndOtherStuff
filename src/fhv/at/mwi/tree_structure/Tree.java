@@ -4,6 +4,7 @@ import java.util.LinkedList;
 
 public abstract class Tree<T extends Node> {
 
+
     protected T _root;
     protected static LinkedList<MetaNode> outList;
 
@@ -76,5 +77,12 @@ public abstract class Tree<T extends Node> {
     public abstract void autoInsert(T value);
     public abstract int getRBHeight();
 
+    public T getRoot() {
+        return _root;
+    }
+
+    public void setRoot(T _root) {
+        this._root = _root;
+    }
 
 }
