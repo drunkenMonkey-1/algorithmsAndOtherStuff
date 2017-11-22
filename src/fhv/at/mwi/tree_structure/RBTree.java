@@ -9,8 +9,6 @@ public class RBTree extends Tree<RBNode<?>> {
     private static final boolean BLACK = false;
     private static RBNode<?> _sentinel;
 
-    private TreeVisualizer _vsz;
-
     /**
      * Create a new RBTree with a given root RBNode
      * (Sentinel and root color is set automatically)
@@ -23,6 +21,10 @@ public class RBTree extends Tree<RBNode<?>> {
         _root.setParentNode(_sentinel);
         _root.setRight(_sentinel);
         _root.setLeft(_sentinel);
+        propTranslator = new PropertyTranslator<Boolean>();
+        propTranslator.addColorForProperty(true, Color.RED);
+        propTranslator.addColorForProperty(false, Color.BLACK);
+
     }
 
     /**
@@ -40,29 +42,6 @@ public class RBTree extends Tree<RBNode<?>> {
             return 0;
         }
         return Math.max(treeHeight(n.getRight()), treeHeight(n.getLeft())) + 1;
-    }
-
-    /**
-     * Register a tree visualizer. Every time you call autoInsert the RBTree is redrawn
-     */
-    public void registerVisualizer(){
-        PropertyTranslator<Boolean> pt = new PropertyTranslator<>();
-        pt.addColorForProperty(true, Color.RED);
-        pt.addColorForProperty(false, Color.BLACK);
-        _vsz = new TreeVisualizer(this, pt,
-        new ValueParser<Integer>() {
-            @Override
-            public Integer parse(String text) throws NumberFormatException {
-                return Integer.parseInt(text);
-            }
-
-            @Override
-            public String parseVtoString(Integer value) {
-                return Integer.toString(value);
-            }
-        });
-        String[] args = {""};
-        VisualizerWnd.showWnd(args, _vsz, "RBTree Visualizer");
     }
 
     /**
@@ -199,8 +178,14 @@ public class RBTree extends Tree<RBNode<?>> {
 
         // if a tree visualizer was registred, the tree will be redrawn, to make the changes visible
         if(_vsz != null){
+            System.out.println("redraw");
             _vsz.redraw();
         }
+    }
+
+    @Override
+    public void autoInsert(Object v) {
+        autoInsert(new RBNode<Comparable>((Comparable) v));
     }
 
     /**

@@ -1,5 +1,11 @@
 package fhv.at.mwi.tree_structure;
 
+import fhv.at.mwi.tree_visualizer.PropertyTranslator;
+import fhv.at.mwi.tree_visualizer.TreeVisualizer;
+import fhv.at.mwi.tree_visualizer.ValueParser;
+import fhv.at.mwi.tree_visualizer.VisualizerWnd;
+import javafx.scene.paint.Color;
+
 import java.util.LinkedList;
 
 public abstract class Tree<T extends Node> {
@@ -7,6 +13,8 @@ public abstract class Tree<T extends Node> {
 
     protected T _root;
     protected static LinkedList<MetaNode> outList;
+    protected TreeVisualizer _vsz;
+    protected PropertyTranslator propTranslator;
 
     public Tree(T root){
         _root = root;
@@ -36,6 +44,27 @@ public abstract class Tree<T extends Node> {
 
         }
         return outList;
+    }
+
+    /**
+     * Register a tree visualizer. Every time you call autoInsert the RBTree is redrawn.
+     * @param title
+     */
+    public void registerVisualizer(String title){
+        _vsz = new TreeVisualizer(this, propTranslator,
+                new ValueParser<Integer>() {
+                    @Override
+                    public Integer parse(String text) throws NumberFormatException {
+                        return Integer.parseInt(text);
+                    }
+
+                    @Override
+                    public String parseVtoString(Integer value) {
+                        return Integer.toString(value);
+                    }
+                });
+        String[] args = {""};
+        VisualizerWnd.showWnd(args, _vsz, title);
     }
 
     /**
@@ -75,6 +104,7 @@ public abstract class Tree<T extends Node> {
      * @param value Node to insert
      */
     public abstract void autoInsert(T value);
+    public abstract void autoInsert(Object v);
     public abstract int getRBHeight();
 
     public T getRoot() {

@@ -1,6 +1,8 @@
 package fhv.at.mwi.tree_structure;
 
 import fhv.at.mwi.general.EasyMath;
+import fhv.at.mwi.tree_visualizer.PropertyTranslator;
+import javafx.scene.paint.Color;
 
 
 public class BinaryTree extends Tree<BinaryNode>{
@@ -10,6 +12,8 @@ public class BinaryTree extends Tree<BinaryNode>{
 
     public BinaryTree(BinaryNode rootVal) {
         super(rootVal);
+        propTranslator = new PropertyTranslator();
+        propTranslator.addColorForProperty(null, Color.GREEN);
     }
 
 
@@ -17,12 +21,30 @@ public class BinaryTree extends Tree<BinaryNode>{
     @Override
     public void autoInsert(BinaryNode inNode) {
         insertAtPath(getNextPath(), inNode);
+        if(_vsz != null){
+            _vsz.redraw();
+        }
+    }
+
+    @Override
+    public void autoInsert(Object v) {
+        autoInsert(new BinaryNode<>((Comparable) v));
     }
 
     @Override
     public int getRBHeight() {
-        return 0;
+        return getHeight(_root);
     }
+
+    private int getHeight(BinaryNode root){
+        if(root == null){
+            return 0;
+        } else{
+            return (Math.max(getHeight(root.getLeft()), getHeight(root.getRight())) + 1);
+        }
+    }
+
+
 
 
 

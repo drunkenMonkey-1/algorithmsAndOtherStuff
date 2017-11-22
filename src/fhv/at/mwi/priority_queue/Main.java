@@ -25,6 +25,8 @@ public class Main {
 
         System.out.println(heap.dequeue());
 
+        heap.getHeap().registerVisualizer("Heap visualizer");
+
         LinkedList<MetaNode> nodes =  heap.getHeap().outputTree(OutputStrategy.LVLBYLVL);
         for(MetaNode n:nodes){
             if(n != null) {

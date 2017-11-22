@@ -1,8 +1,5 @@
 package fhv.at.mwi.tree_structure;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
 
 public class BinaryNode<V extends Comparable, K> extends Node<V, K>{
 

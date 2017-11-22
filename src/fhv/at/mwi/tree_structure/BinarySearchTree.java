@@ -14,6 +14,11 @@ public class BinarySearchTree extends Tree<BinaryNode>{
     }
 
     @Override
+    public void autoInsert(Object v) {
+
+    }
+
+    @Override
     public int getRBHeight() {
         return 0;
     }

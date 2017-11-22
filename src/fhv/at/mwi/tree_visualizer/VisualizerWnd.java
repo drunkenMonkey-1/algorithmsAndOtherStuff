@@ -6,7 +6,9 @@ import javafx.geometry.Insets;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.input.ScrollEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
@@ -32,9 +34,8 @@ public class VisualizerWnd extends Application {
     public static final int WND_HEIGHT = 720;               /* Window height */
     public static final int NODE_RADIUS = 10;               /* Radius of each tree node. 10 is good */
     public static final int TOP_OFFSET = 50;                /* Distance from the top to the root node */
-    public static final int Y_OFFSET = 30;                  /* Distance between parent and child on y-Axis */
-    public static final int GAP_OFFSET =                    /* Additional gap offset between child nodes*/
-            VisualizerWnd.NODE_RADIUS * 2;
+    public static final int Y_OFFSET = 60;                  /* Distance between parent and child on y-Axis */
+    public static final int GAP_OFFSET = 0;                 /* Additional gap offset between child nodes*/
     public static final int TEXT_OFFSET = 4;                /* Text offset for default font size and place
                                                                of text in the node mid. 4 should do the job*/
 
@@ -57,12 +58,17 @@ public class VisualizerWnd extends Application {
         Group controlGroup = ribbonControls.getControlsGroup();
         Group board =_vsBoard.getTreeGroup();
 
+        ScrollPane scrollPane = new ScrollPane(board);
+        scrollPane.setPrefSize(WND_WIDTH, WND_HEIGHT);
+        scrollPane.setFitToWidth(true);
 
 
-        VBox combi = new VBox(controlGroup, board);
+
+        VBox combi = new VBox(controlGroup, scrollPane);
+
         Scene scene = new Scene(combi, WND_WIDTH, WND_HEIGHT, Color.TRANSPARENT);
 
-        combi.setOnScroll(new EventHandler<ScrollEvent>() {
+        scrollPane.setOnScroll(new EventHandler<ScrollEvent>() {
             @Override public void handle(ScrollEvent event) {
                 event.consume();
 
@@ -74,6 +80,7 @@ public class VisualizerWnd extends Application {
                         (event.getDeltaY() > 0)
                                 ? 1.1
                                 : 1/1.1;
+
 
                 board.setScaleX(board.getScaleX() * scaleFactor);
                 board.setScaleY(board.getScaleY() * scaleFactor);

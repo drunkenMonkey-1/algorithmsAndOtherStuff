@@ -58,7 +58,7 @@ public class TreeVisualizer implements Visualizer {
                 if(!_valueTxtField.getText().equals("")) {
                     try {
                         _vp.parse(_valueTxtField.getText());
-                        _tree.autoInsert(new RBNode<>(_vp.parse(_valueTxtField.getText())));
+                        _tree.autoInsert(_vp.parse(_valueTxtField.getText()));
                     } catch (NumberFormatException e){
                         Alert alert = new Alert(Alert.AlertType.ERROR);
                         alert.setTitle("Error");
@@ -71,10 +71,11 @@ public class TreeVisualizer implements Visualizer {
         }
 
         /* draw tree lvl by lvl */
-        int lvls = _tree.getRBHeight();
+        int lvls = _tree.getRBHeight() + 1;
         LinkedList<MetaNode> nodes = _tree.outputTree(OutputStrategy.LVLBYLVL);
         Position graphicPositions[] = new Position[EasyMath.power(2, lvls+1)];
         Position mid = new Position(VisualizerWnd.WND_WIDTH / 2, VisualizerWnd.TOP_OFFSET);
+        System.out.println(mid.toString());
         graphicPositions[0] = mid;
 
         int currentLvl = 0;
@@ -131,6 +132,7 @@ public class TreeVisualizer implements Visualizer {
     private void setGraphicsNode(String val, int x, int y, Color cl){
         Circle c = new Circle(x, y, VisualizerWnd.NODE_RADIUS, cl);
         Text text = new Text(x - VisualizerWnd.TEXT_OFFSET, y + VisualizerWnd.TEXT_OFFSET, val);
+        text.setStyle("-fx-font-weight: bold");
         text.setFill(Color.WHITE);
         _treeGroup.getChildren().add(c);
         _treeGroup.getChildren().add(text);
