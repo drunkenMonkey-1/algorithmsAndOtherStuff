@@ -24,6 +24,13 @@ public class Main {
         heap.enqueue(3);
 
         System.out.println(heap.dequeue());
+        System.out.println(heap.dequeue());
+        System.out.println(heap.dequeue());
+        System.out.println(heap.dequeue());
+        System.out.println(heap.dequeue());
+        System.out.println(heap.dequeue());
+        System.out.println(heap.isEmpty());
+        System.out.println(heap.dequeue());
 
         heap.getHeap().registerVisualizer("Heap visualizer");
 

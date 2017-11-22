@@ -22,6 +22,9 @@ public class LeftistHeap<T extends Comparable> {
 
     public T dequeue(){
         BinaryNode<T, Boolean> dq = _heap.getRoot();
+        if(dq == null){
+            return null;
+        }
         BinaryNode<T, Boolean> nodeRight = dq.getRight();
         BinaryNode<T, Boolean> nodeLeft = dq.getLeft();
         if(nodeRight == null){

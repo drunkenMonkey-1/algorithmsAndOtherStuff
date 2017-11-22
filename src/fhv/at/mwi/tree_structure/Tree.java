@@ -96,7 +96,9 @@ public abstract class Tree<T extends Node> {
      * @param root Root node of the tree or subtree.
      */
     private void lvlbylvlout(Node root) {
-        root.lvlbylvlOut(root, outList);
+        if(root != null) {
+            root.lvlbylvlOut(root, outList);
+        }
     }
 
     /**

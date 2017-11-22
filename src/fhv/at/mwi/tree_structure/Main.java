@@ -10,8 +10,8 @@ public class Main {
     public static void main(String[] args){
 
         RBTree rbTree = new RBTree(new RBNode<>(6));
-//        rbTree.autoInsert(new RBNode<>(10));
-//        rbTree.autoInsert(new RBNode<>(5));
+        rbTree.autoInsert(new RBNode<>(10));
+        rbTree.autoInsert(new RBNode<>(5));
 //        rbTree.autoInsert(new RBNode<>(7));
 //        rbTree.autoInsert(new RBNode<>(8));
 //        rbTree.autoInsert(new RBNode<>(77));
