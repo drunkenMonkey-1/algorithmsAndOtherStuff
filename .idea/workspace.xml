@@ -10,57 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e131d282-0f23-4c3f-bbef-955ae9acfb03" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/matrix/BinaryMatrix2D.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/matrix/Matrix2D.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/analysis/AlgorithmAnalysis.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/compression/Compression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/general/EasyMath.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/general/Position.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/general/SimpleMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/hash_table/AltHash.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/hash_table/CollisionStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/hash_table/MHashTable$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/hash_table/MHashTable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/hash_table/TableEntry.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/priority_queue/LeftistHeap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/priority_queue/Main$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/priority_queue/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/quality_control/QualityControl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/quality_control/TestMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/search_algorithms/SearchAlgorithm.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/search_tree/BinNode$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/search_tree/BinNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/search_tree/Decoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/search_tree/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/search_tree/OutputStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/search_tree/SequenceReader.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/search_tree/SequenceWriter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sorting_algorithms/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sorting_algorithms/SortingAlgorithm.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_structure/BinaryNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_structure/BinarySearchTree.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_structure/BinaryTree.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_structure/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_structure/MetaNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_structure/Node.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_structure/OutputStrategy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_structure/RBNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_structure/RBTree.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_structure/Tree$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_structure/Tree$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_structure/Tree.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_visualizer/Controls.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_visualizer/PropertyTranslator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_visualizer/TreeVisualizer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_visualizer/ValueParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_visualizer/Visualizer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_visualizer/VisualizerWnd$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/tree_visualizer/VisualizerWnd.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/tests/hash_table/HashTableTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/tests/hash_table/SearchAlgorithmTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/tests/priority_queue/LeftistHeapTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/tests/priority_queue/LeftistHeapTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/BinaryMatrix.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/Expression.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/ExpressionScanner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -95,7 +46,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="400">
               <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
@@ -128,12 +79,9 @@
       <file leaf-file-name="Graph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-              <folding>
-                <element signature="e#1075#1076#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-25">
+              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,11 +89,33 @@
       <file leaf-file-name="AdjacencyStructure.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/AdjacencyStructure.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="600">
+              <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExpressionScanner.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/ExpressionScanner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Expression.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/Expression.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -173,42 +143,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StructType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/StructType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AdjacencyMatrix.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/AdjacencyMatrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="250">
               <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Matrix2D.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Matrix2D.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/matrix/Matrix2D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-              <folding>
-                <element signature="e#117#118#0" expanded="true" />
-                <element signature="e#149#150#0" expanded="true" />
-                <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#218#219#0" expanded="true" />
-                <element signature="e#249#250#0" expanded="true" />
-                <element signature="e#282#283#0" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
-                <element signature="e#380#381#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="450">
+              <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -216,7 +166,7 @@
       <file leaf-file-name="BinaryMatrix2D.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/matrix/BinaryMatrix2D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
+            <state relative-caret-position="225">
               <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#144#145#0" expanded="true" />
@@ -232,10 +182,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
-        <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -259,9 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/SimpleTree.java" />
-        <option value="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/BinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/sequence1.txt" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/TreeNode.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/search_tree/OutputStrategy.java" />
         <option value="$PROJECT_DIR$/sequence2.txt" />
@@ -310,6 +257,9 @@
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/Graph.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/matrix/BinaryMatrix2D.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/matrix/Matrix2D.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/Scanner.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/Expression.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/ExpressionScanner.java" />
       </list>
     </option>
   </component>
@@ -341,6 +291,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -365,15 +317,27 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="mwi" type="462c0819:PsiDirectoryNode" />
+              <item name="expression_parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mwi" type="462c0819:PsiDirectoryNode" />
+              <item name="graph_structure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mwi" type="462c0819:PsiDirectoryNode" />
               <item name="matrix" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -611,7 +575,9 @@
       <workItem from="1511347363544" duration="2669000" />
       <workItem from="1511713758566" duration="7441000" />
       <workItem from="1511902222449" duration="3956000" />
-      <workItem from="1511964503160" duration="2392000" />
+      <workItem from="1511964503160" duration="2492000" />
+      <workItem from="1512034060625" duration="22000" />
+      <workItem from="1512060244960" duration="877000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1507895132040</created>
@@ -656,7 +622,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="286722000" />
+    <option name="totallyTimeSpent" value="287721000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -669,7 +635,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -724,8 +689,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/search_tree/Interface.java" />
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/search_tree/SimpleParser.java" />
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/search_tree/BinarySearchTree.java" />
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/search_tree/TreeNode.java" />
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/search_tree/Main.java">
@@ -811,7 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
           <caret line="36" column="7" lean-forward="true" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="596">
           <caret line="111" column="13" lean-forward="true" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,16 +961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/AdjacencyStructure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -1034,50 +984,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="400">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/Graph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1103#1104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/BinaryMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/BinaryMatrix.java" />
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/AdjacencyMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="250">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/matrix/BinaryMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/matrix/BinaryMatrix.java" />
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/matrix/BinaryMatrix2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="225">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#144#145#0" expanded="true" />
@@ -1088,18 +1013,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/matrix/Matrix2D.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/Graph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/AdjacencyStructure.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
-          <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
           <folding>
-            <element signature="e#117#118#0" expanded="true" />
-            <element signature="e#149#150#0" expanded="true" />
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#218#219#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/ExpressionScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
