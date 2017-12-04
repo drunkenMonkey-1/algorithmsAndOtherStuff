@@ -1,21 +1,21 @@
 package fhv.at.mwi.graph_structure;
 
 
-public class Node <T> {
+public class Vertex<T> implements Comparable<Vertex>{
 
     private T _label;
     private int _property;
 
-    public Node(){
+    public Vertex(){
         _label = null;
     }
 
-    public Node(T label){
+    public Vertex(T label){
         _label = label;
         _property = -1;
     }
 
-    public Node(T label, int property){
+    public Vertex(T label, int property){
         _label = label;
         _property = property;
     }
@@ -37,8 +37,20 @@ public class Node <T> {
         this._property = _property;
     }
 
-    public boolean equals(Node o){
+    public boolean equals(Vertex o){
         return _label.equals(o);
     }
 
+    @Override
+    public int compareTo(Vertex o) {
+        if(_label.equals(o._label)){
+            return 0;
+        }
+        return -1;
+    }
+
+    @Override
+    public String toString(){
+        return _label + " | " + Integer.toString(_property);
+    }
 }

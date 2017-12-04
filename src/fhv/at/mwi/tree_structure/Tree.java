@@ -103,7 +103,7 @@ public abstract class Tree<T extends Node> {
 
     /**
      * Decides how a node is inserted to tree structure
-     * @param value Node to insert
+     * @param value Vertex to insert
      */
     public abstract void autoInsert(T value);
     public abstract void autoInsert(Object v);

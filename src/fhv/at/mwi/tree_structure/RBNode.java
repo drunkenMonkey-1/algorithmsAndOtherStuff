@@ -8,7 +8,7 @@ public class RBNode <V extends Comparable> extends Node<V, Boolean> {
     private RBNode _parentNode;
 
     /**
-     * Create a new Node with the value stored in it
+     * Create a new Vertex with the value stored in it
      * After calling the super constructor, you need to init the protected _children variable.
      *
      * @param value

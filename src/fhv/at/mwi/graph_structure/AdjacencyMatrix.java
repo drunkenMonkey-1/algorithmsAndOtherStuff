@@ -1,62 +1,167 @@
 package fhv.at.mwi.graph_structure;
 
-import java.util.List;
+import java.util.*;
 
-public class AdjacencyMatrix<E> extends AdjacencyStructure<E> {
+public class AdjacencyMatrix<E extends Comparable> extends AdjacencyStructure<E> {
 
+    private int _vertexIndex = 0;
+    private Map<Vertex, Integer> _indexNodeMap = new Hashtable<>();
+    private LinkedList<Vertex> _verticies = new LinkedList<>();
+    private E[][] _matrix;
+    private E _sentinel;
+
+    public AdjacencyMatrix(E sentinel) {
+        _sentinel = sentinel;
+    }
 
     @Override
     public List print() {
+        LinkedList<Object> _outList = new LinkedList<>();
+        int rows = _matrix.length;
+        _outList.add("");
+        for(Vertex v:_verticies){
+            _outList.add(v.getLabel() + " ");
+        }
+        _outList.add("\n");
+        for(int i = 0; i < rows; i++){
+            int columns = _matrix[i].length;
+            _outList.add( _verticies.get(i).getLabel() + " ");
+            for(int x = 0; x < columns; x++){
+                _outList.add( _matrix[i][x] + " ");
+            }
+            _outList.add("\n");
+        }
+        return _outList;
+    }
+
+    private Vertex getKeyByValue(Map<Vertex, Integer> map, Integer value) {
+        for (Map.Entry<Vertex, Integer> entry : map.entrySet()) {
+            if (Objects.equals(value, entry.getValue())) {
+                return entry.getKey();
+            }
+        }
         return null;
     }
 
     @Override
-    public boolean addNode(Node n) {
+    public boolean addVertex(Vertex n) {
+        if(_indexNodeMap.containsKey(n)) {
+            return false;
+        }
+        _indexNodeMap.put(n, _vertexIndex);
+        _verticies.add(n);
+        resizeMatrix();
+        _vertexIndex++;
+        return true;
+    }
+
+    private void resizeMatrix(){
+        int mn = _vertexIndex+1;
+        E[][] tempMatrix = (E[][]) new Comparable[mn][mn];
+        if(_matrix != null){
+            int rows = _matrix.length;
+            for(int i = 0; i < rows; i++){
+                int columns = _matrix[i].length;
+                for(int x = 0; x < columns; x++){
+                    tempMatrix[i][x] = _matrix[i][x];
+                }
+            }
+        }
+        _matrix = tempMatrix;
+    }
+
+    @Override
+    public boolean removeVertex(Vertex n) {
         return false;
     }
 
     @Override
-    public boolean removeNode(Node n) {
-        return false;
+    public boolean connectVertices(Vertex n1, Vertex n2, E weight) {
+        if(!_indexNodeMap.containsKey(n1) || !_indexNodeMap.containsKey(n2)){
+            return false;
+        }
+        int y = _indexNodeMap.get(n1), x = _indexNodeMap.get(n2);
+        _matrix[y][x] = weight;
+        return true;
     }
 
     @Override
-    public void connectNodes(Node n1, Node n2, E weight) {
-
+    public void connectVertices(Vertex n1, Vertex n2) {
+        connectVertices(n1, n2, _sentinel);
     }
 
     @Override
-    public void connectNodes(Node n1, Node n2) {
-
+    public void disconnectVertices(Vertex n1, Vertex n2) {
+        connectVertices(n1, n2, null);
     }
 
     @Override
-    public void doubleConnectNodes(Node n1, Node n2, E weight) {
-
+    public void doubleConnectVertices(Vertex n1, Vertex n2, E weight) {
+        connectVertices(n1, n2, weight);
+        connectVertices(n2, n1, weight);
     }
 
     @Override
-    public void doubleConnectNodes(Node n1, Node n2) {
-
+    public void doubleConnectVertices(Vertex n1, Vertex n2) {
+        connectVertices(n1, n2, _sentinel);
+        connectVertices(n2, n1, _sentinel);
     }
 
     @Override
-    public boolean nodesConnected(Node n1, Node n2) {
-        return false;
+    public boolean verticesConnected(Vertex n1, Vertex n2) {
+        int y = _indexNodeMap.get(n1), x = _indexNodeMap.get(n2);
+        if(_matrix[y][x] == null){
+            return false;
+        }
+        return true;
     }
 
     @Override
-    public E getWeight(Node n1, Node n2) {
+    public E getWeight(Vertex n1, Vertex n2) {
+        if(verticesConnected(n1, n2)){
+            int y = _indexNodeMap.get(n1), x = _indexNodeMap.get(n2);
+            return _matrix[y][x];
+        }
         return null;
     }
 
     @Override
-    public void setWeight(Node n1, Node n2, E weight) {
+    public void setWeight(Vertex n1, Vertex n2, E weight) {
+        int y = _indexNodeMap.get(n1), x = _indexNodeMap.get(n2);
+        _matrix[y][x] = weight;
+    }
 
+    /**
+     * Only count an out going neighbour if the weight is greater or equal than the weightTrigger
+     * E.g. Ignore neighbours with weight 0 -> weight Trigger = 0
+     * @param n1
+     * @param weightTrigger
+     * @return
+     */
+    @Override
+    public int getNeighbourCount(Vertex n1, E weightTrigger) {
+        int row = _indexNodeMap.get(n1);
+        int count = 0;
+        LinkedList<E> _connections = new LinkedList<>();
+        for(int i = 0; i < _matrix[row].length; i++){
+            if(_matrix[row][i]!= null && _matrix[row][i].compareTo(weightTrigger) > 0){
+                count++;
+            }
+        }
+        return count;
     }
 
     @Override
-    public int getNeighbourCount(Node n1) {
-        return 0;
+    public List<Vertex> getOutgoingVertices(Vertex n) {
+        LinkedList<Vertex> neighbours = new LinkedList<>();
+        int row = _indexNodeMap.get(n);
+        for(int i = 0; i < _matrix[row].length; i++){
+            if(_matrix[row][i]!= null){
+               neighbours.add(_verticies.get(i));
+            }
+        }
+        return neighbours;
     }
+
+
 }

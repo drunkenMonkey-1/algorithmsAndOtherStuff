@@ -12,7 +12,7 @@ public class RBTree extends Tree<RBNode<?>> {
     /**
      * Create a new RBTree with a given root RBNode
      * (Sentinel and root color is set automatically)
-     * @param root Root RB Node of the newly generated tree
+     * @param root Root RB Vertex of the newly generated tree
      */
     public RBTree(RBNode<?> root) {
         super(root);
@@ -86,7 +86,7 @@ public class RBTree extends Tree<RBNode<?>> {
      * 10. If the parent of the current node isn't red anymore the while loop is terminated.
      * 11. Set the root to black. So the second violation from above is fixed, even if the root is still black.
      * 12. End: RB Properties are fixed. RB Tree is rebalanced.
-     * @param node Node to be inserted to the RB Tree
+     * @param node Vertex to be inserted to the RB Tree
      */
     @Override
     public void autoInsert(RBNode<?> node) {
@@ -189,11 +189,11 @@ public class RBTree extends Tree<RBNode<?>> {
     }
 
     /**
-     * Rotate right by mid Node.
+     * Rotate right by mid Vertex.
      * procedure: mid becomes the right child of swap (left child of mid)
      * the right child of swap becomes the left child of mid (since mid
      * doesn't need the right node anymore - swap was the left node of mid)
-     * @param mid Node that is rotated around
+     * @param mid Vertex that is rotated around
      */
     private void rotateRight(RBNode mid){
         System.out.println("right rotate by: " + mid.getValue());
@@ -216,11 +216,11 @@ public class RBTree extends Tree<RBNode<?>> {
     }
 
     /**
-     * Rotate left by mid Node.
+     * Rotate left by mid Vertex.
      * procedure: mid becomes the left child of swap (right child of mid)
      * the left child of swap becomes the right child of mid (since mid
      * doesn't need the right node anymore - swap was the right node of mid)
-     * @param mid Node that is rotated around
+     * @param mid Vertex that is rotated around
      */
     private void rotateLeft(RBNode mid){
         System.out.println("left rotate by: " + mid.getValue());

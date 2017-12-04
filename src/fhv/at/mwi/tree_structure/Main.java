@@ -1,8 +1,5 @@
 package fhv.at.mwi.tree_structure;
 
-import fhv.at.mwi.tree_visualizer.PropertyTranslator;
-
-import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Main {

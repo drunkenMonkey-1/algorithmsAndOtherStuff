@@ -6,10 +6,18 @@ import java.util.Scanner;
 public class ExpressionScanner {
 
     private Scanner _scanner;
+    private String _previousBuffer;
 
+    /**
+     *
+     * @param in
+     */
     public ExpressionScanner(File in){
+        _previousBuffer = null;
         try {
             _scanner = new Scanner(in);
+            /* Empty delimiter to read single characters as string */
+            _scanner.useDelimiter("");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -20,11 +28,20 @@ public class ExpressionScanner {
      * @return
      */
     public String getNext(){
+        if(_previousBuffer != null){
+            String _temp = _previousBuffer;
+            _previousBuffer = null;
+            return _temp;
+        }
         String _current = _scanner.next();
-        if(_current.equals(" ") || _current.equals("\n")){
+        while(_current.equals(" ") || _current.equals("\n")){
             _current = _scanner.next();
         }
         return _current;
+    }
+
+    public boolean hasNext(){
+        return _scanner.hasNext();
     }
 
     /**
@@ -41,6 +58,10 @@ public class ExpressionScanner {
         }
         return nextCharsBuilder.toString();
 
+    }
+
+    public void setPrevious(String c){
+        _previousBuffer = c;
     }
 
 }

@@ -12,7 +12,7 @@ public abstract class Node<V extends  Comparable, K> {
     protected K _property;
 
     /**
-     * Create a new Node with the value stored in it
+     * Create a new Vertex with the value stored in it
      * After calling the super constructor, you need to init the protected _children variable.
      * @param value
      */
@@ -21,7 +21,7 @@ public abstract class Node<V extends  Comparable, K> {
     }
 
     /**
-     * Get the child of the current Node by a given index
+     * Get the child of the current Vertex by a given index
      * @param index Index of the child (0 is usally the left most node)
      * @return Child node
      */
@@ -138,7 +138,7 @@ public abstract class Node<V extends  Comparable, K> {
 
     /**
      * Compare two nodes by their value -> compare the node calling this method with nodeX
-     * @param nodeX Node 1
+     * @param nodeX Vertex 1
      * @return returns zero if nodeX and this node are the same.
      */
     protected abstract int compareNodes(Node nodeX);
