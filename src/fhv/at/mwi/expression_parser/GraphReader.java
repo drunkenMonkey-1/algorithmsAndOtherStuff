@@ -70,7 +70,7 @@ public class GraphReader {
             }
         }
         for(Edge e:_edges){
-            _graph.connect(extractVertexFromEdge(e.get_v1()), extractVertexFromEdge(e.get_v2()), (Integer) e.get_weight());
+            _graph.doubleConnect(extractVertexFromEdge(e.get_v1()), extractVertexFromEdge(e.get_v2()), (Integer) e.get_weight());
         }
     }
 
