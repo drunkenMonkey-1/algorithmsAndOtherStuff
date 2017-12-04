@@ -7,6 +7,7 @@ public class ExpressionScanner {
 
     private Scanner _scanner;
     private String _previousBuffer;
+    public static final String NEW_LINE = System.getProperty("line.separator");
 
     /**
      *
@@ -34,7 +35,7 @@ public class ExpressionScanner {
             return _temp;
         }
         String _current = _scanner.next();
-        while(_current.equals(" ") || _current.equals("\n")){
+        while(_current.equals(" ") || _current.contains("\n") || _current.contains("\r")  || _current.isEmpty()){
             _current = _scanner.next();
         }
         return _current;

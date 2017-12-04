@@ -7,34 +7,6 @@ public class AdjacencyList<E extends Comparable> extends AdjacencyStructure<E> {
     private HashMap<Vertex, Map<Vertex, E>> _adjList = new HashMap<>();
     private E _sentinel;
 
-    private class Edge{
-
-        private E weight;
-        private Vertex vertex;
-
-        public Edge(Vertex v, E weight){
-            this.setVertex(v);
-            this.setWeight(weight);
-        }
-
-        public E getWeight() {
-            return weight;
-        }
-
-        public void setWeight(E weight) {
-            this.weight = weight;
-        }
-
-        public Vertex getVertex() {
-            return vertex;
-        }
-
-        public void setVertex(Vertex vertex) {
-            this.vertex = vertex;
-        }
-
-    }
-
     public AdjacencyList(E sentinel){
         _sentinel = sentinel;
     }

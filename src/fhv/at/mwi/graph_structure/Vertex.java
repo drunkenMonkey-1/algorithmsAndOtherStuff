@@ -43,7 +43,7 @@ public class Vertex<T> implements Comparable<Vertex>{
 
     @Override
     public int compareTo(Vertex o) {
-        if(_label.equals(o._label)){
+        if(_label.equals(o._label) && _property == o.getProperty()){
             return 0;
         }
         return -1;
