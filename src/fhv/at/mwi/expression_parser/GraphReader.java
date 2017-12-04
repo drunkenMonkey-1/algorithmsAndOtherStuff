@@ -3,16 +3,20 @@ package fhv.at.mwi.expression_parser;
 import fhv.at.mwi.graph_structure.Graph;
 import fhv.at.mwi.graph_structure.StructType;
 import fhv.at.mwi.graph_structure.Vertex;
+import fhv.at.mwi.graph_structure.VertexExistenceException;
 
 import java.io.File;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 public class GraphReader {
 
     private static Graph _graph;
     private ExpressionScanner _scanner;
-    private List<Vertex> _vertices = new LinkedList<>();
+    private Map<Object, Vertex> _vertices = new HashMap<>();
+    private List<Edge> _edges= new LinkedList<>();
 
     public GraphReader(String filePath) throws InvalidExpressionException {
         _scanner = new ExpressionScanner(new File(filePath));
@@ -35,7 +39,7 @@ public class GraphReader {
         while(_scanner.hasNext()){
             readGraph();
         }
-
+        insertToGraph(_vertices, _edges);
     }
 
     private void readGraph() throws InvalidExpressionException {
@@ -43,18 +47,35 @@ public class GraphReader {
         if(current.equals("V={")){
             DelimParser<Vertex> vertexParser = new DelimParser<>( ";", "}", new VertexExpression());
             while(!vertexParser.endOfExpression()){
-                _vertices.add(vertexParser.parse(_scanner));
+                Vertex add = vertexParser.parse(_scanner);
+                _vertices.put(add.getLabel(), add);
             }
         }
         else if(current.equals("E={") && !_vertices.isEmpty()){
-
+            DelimParser<Edge> edgeParser = new DelimParser<>( ";", "}", new EdgeExpression());
+            while(!edgeParser.endOfExpression()){
+                _edges.add(edgeParser.parse(_scanner));
+            }
         } else{
             throw new InvalidExpressionException("Invalid graph type. V or E expected, found " + current);
         }
     }
 
-    private void insertToGraph(List vertices, List edges){
+    private void insertToGraph(Map vertices, List edges){
+        for(Map.Entry<Object, Vertex> e:_vertices.entrySet()){
+            try {
+                _graph.add(e.getValue());
+            } catch (VertexExistenceException e1) {
+                e1.printStackTrace();
+            }
+        }
+        for(Edge e:_edges){
+            _graph.connect(extractVertexFromEdge(e.get_v1()), extractVertexFromEdge(e.get_v2()), (Integer) e.get_weight());
+        }
+    }
 
+    private Vertex extractVertexFromEdge(Vertex u){
+        return _vertices.get(u.getLabel());
     }
 
     public static Graph getGraph() {

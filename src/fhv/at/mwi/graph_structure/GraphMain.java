@@ -12,9 +12,15 @@ public class GraphMain {
 
         try {
             GraphReader gr = new GraphReader("graph_in.txt");
+            Iterator igr = GraphReader.getGraph().print().iterator();
+            while(igr.hasNext()){
+                System.out.printf("%10s", igr.next());
+            }
+            System.out.println("-----");
         } catch (InvalidExpressionException e) {
             e.printStackTrace();
         }
+
 
         Graph testGraph = new Graph(StructType.LIST);
         Vertex vertices[] = {new Vertex<>("a"),
@@ -37,10 +43,6 @@ public class GraphMain {
         testGraph.doubleConnect(vertices[0], vertices[2], 1);
         testGraph.doubleConnect(vertices[1], vertices[2], 1);
 
-        Iterator<Vertex> n = testGraph.getNeighbours(vertices[0]).iterator();
-        while (n.hasNext()){
-            System.out.println(n.next().toString());
-        }
 
         Iterator gIt = testGraph.print().iterator();
         while(gIt.hasNext()){
