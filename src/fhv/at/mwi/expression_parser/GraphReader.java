@@ -19,8 +19,8 @@ public class GraphReader {
     private List<Edge> _edges= new LinkedList<>();
 
     /**
-     *
-     * @param filePath
+     * Read a graph from a file
+     * @param filePath path to txt file including a graph definition
      * @throws InvalidExpressionException
      */
     public GraphReader(String filePath) throws InvalidExpressionException {
@@ -93,9 +93,9 @@ public class GraphReader {
     }
 
     /**
-     *
-     * @param label
-     * @return
+     * Return a vertex that was read by the parser by it's label
+     * @param label String or something else associated with the wanted vertex
+     * @return Vertex by given key label
      */
     public Vertex getVertexByLabel(Object label){
         return _vertices.get(label);
@@ -114,8 +114,8 @@ public class GraphReader {
     }
 
     /**
-     *
-     * @return
+     * Return the graph, that was read by the parser
+     * @return A graph with vertices and edges
      */
     public static Graph getGraph() {
         return _graph;
