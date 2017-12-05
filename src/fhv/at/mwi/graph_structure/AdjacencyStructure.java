@@ -16,6 +16,7 @@ public abstract class AdjacencyStructure<E extends Comparable> {
     public abstract boolean connectVertices(Vertex n1, Vertex n2, E weight);
     public abstract void connectVertices(Vertex n1, Vertex n2);
     public abstract void disconnectVertices(Vertex n1, Vertex n2);
+    public abstract void doubleDisconnectVertices(Vertex n1, Vertex n2);
     public abstract void doubleConnectVertices(Vertex n1, Vertex n2, E weight);
     public abstract void doubleConnectVertices(Vertex n1, Vertex n2);
 
@@ -23,7 +24,8 @@ public abstract class AdjacencyStructure<E extends Comparable> {
     public abstract E getWeight(Vertex n1, Vertex n2);
     public abstract void setWeight(Vertex n1, Vertex n2, E weight);
 
-    public abstract int getNeighbourCount(Vertex n1, E maxWeight);
+    public abstract int numOfOutgoingNeighbour(Vertex n1);
+    public abstract int numOfIngoingNeighbour(Vertex n1);
     public abstract List<Vertex> getOutgoingVertices(Vertex n);
 
 }

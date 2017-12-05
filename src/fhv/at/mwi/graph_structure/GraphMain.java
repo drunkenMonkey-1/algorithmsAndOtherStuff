@@ -11,8 +11,16 @@ public class GraphMain {
     public static void main(String[] args) {
 
         try {
-            GraphReader gr = new GraphReader("house.txt");
-            Iterator igr = GraphReader.getGraph().print().iterator();
+            GraphReader gReader = new GraphReader("house.txt");
+            Graph out = GraphReader.getGraph();
+
+            out.doubleDisconnectVertices(gReader.getVertexByLabel("a"), gReader.getVertexByLabel("c"));
+            out.doubleDisconnectVertices(gReader.getVertexByLabel("c"), gReader.getVertexByLabel("d"));
+            out.doubleDisconnectVertices(gReader.getVertexByLabel("c"), gReader.getVertexByLabel("e"));
+
+            System.out.println(out.checkForOpenEulerianPath(gReader.getVertexByLabel("a")));
+
+            Iterator igr = out.print().iterator();
             while(igr.hasNext()){
                 System.out.printf("%10s", igr.next());
             }

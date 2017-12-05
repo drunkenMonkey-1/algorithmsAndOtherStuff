@@ -8,10 +8,10 @@ public class AdjacencyMatrix<E extends Comparable> extends AdjacencyStructure<E>
     private Map<Vertex, Integer> _indexNodeMap = new Hashtable<>();
     private LinkedList<Vertex> _verticies = new LinkedList<>();
     private E[][] _matrix;
-    private E _sentinel;
+    private E _defaultWeight;
 
-    public AdjacencyMatrix(E sentinel) {
-        _sentinel = sentinel;
+    public AdjacencyMatrix(E defaultWeight) {
+        _defaultWeight = defaultWeight;
     }
 
     @Override
@@ -72,7 +72,11 @@ public class AdjacencyMatrix<E extends Comparable> extends AdjacencyStructure<E>
 
     @Override
     public boolean removeVertex(Vertex n) {
-        return false;
+        if(!_indexNodeMap.containsKey(n)){
+            return false;
+        }
+        _indexNodeMap.remove(n);
+        return true;
     }
 
     @Override
@@ -87,12 +91,18 @@ public class AdjacencyMatrix<E extends Comparable> extends AdjacencyStructure<E>
 
     @Override
     public void connectVertices(Vertex n1, Vertex n2) {
-        connectVertices(n1, n2, _sentinel);
+        connectVertices(n1, n2, _defaultWeight);
     }
 
     @Override
     public void disconnectVertices(Vertex n1, Vertex n2) {
         connectVertices(n1, n2, null);
+    }
+
+    @Override
+    public void doubleDisconnectVertices(Vertex n1, Vertex n2) {
+        disconnectVertices(n1, n2);
+        disconnectVertices(n2, n1);
     }
 
     @Override
@@ -103,12 +113,15 @@ public class AdjacencyMatrix<E extends Comparable> extends AdjacencyStructure<E>
 
     @Override
     public void doubleConnectVertices(Vertex n1, Vertex n2) {
-        connectVertices(n1, n2, _sentinel);
-        connectVertices(n2, n1, _sentinel);
+        connectVertices(n1, n2, _defaultWeight);
+        connectVertices(n2, n1, _defaultWeight);
     }
 
     @Override
     public boolean verticesConnected(Vertex n1, Vertex n2) {
+        if(!_indexNodeMap.containsKey(n1) || !_indexNodeMap.containsKey(n2)){
+            return false;
+        }
         int y = _indexNodeMap.get(n1), x = _indexNodeMap.get(n2);
         if(_matrix[y][x] == null){
             return false;
@@ -135,16 +148,32 @@ public class AdjacencyMatrix<E extends Comparable> extends AdjacencyStructure<E>
      * Only count an out going neighbour if the weight is greater or equal than the weightTrigger
      * E.g. Ignore neighbours with weight 0 -> weight Trigger = 0
      * @param n1
-     * @param weightTrigger
      * @return
      */
     @Override
-    public int getNeighbourCount(Vertex n1, E weightTrigger) {
+    public int numOfOutgoingNeighbour(Vertex n1) {
         int row = _indexNodeMap.get(n1);
         int count = 0;
-        LinkedList<E> _connections = new LinkedList<>();
         for(int i = 0; i < _matrix[row].length; i++){
-            if(_matrix[row][i]!= null && _matrix[row][i].compareTo(weightTrigger) > 0){
+            if(_matrix[row][i]!= null){
+                count++;
+            }
+        }
+        return count;
+    }
+
+    /**
+     *
+     * @param n1
+     * @return
+     */
+    @Override
+    public int numOfIngoingNeighbour(Vertex n1) {
+        int col = _indexNodeMap.get(n1);
+        int iLim = _matrix[0].length;
+        int count = 0;
+        for(int i = 0; i < iLim; i++){
+            if(_matrix[i][col] != null){
                 count++;
             }
         }
@@ -156,7 +185,7 @@ public class AdjacencyMatrix<E extends Comparable> extends AdjacencyStructure<E>
         LinkedList<Vertex> neighbours = new LinkedList<>();
         int row = _indexNodeMap.get(n);
         for(int i = 0; i < _matrix[row].length; i++){
-            if(_matrix[row][i]!= null){
+            if(_matrix[row][i] != null){
                neighbours.add(_verticies.get(i));
             }
         }

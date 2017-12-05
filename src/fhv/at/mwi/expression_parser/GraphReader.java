@@ -18,6 +18,11 @@ public class GraphReader {
     private Map<Object, Vertex> _vertices = new HashMap<>();
     private List<Edge> _edges= new LinkedList<>();
 
+    /**
+     *
+     * @param filePath
+     * @throws InvalidExpressionException
+     */
     public GraphReader(String filePath) throws InvalidExpressionException {
         _scanner = new ExpressionScanner(new File(filePath));
         String current = _scanner.getNext(3);
@@ -78,6 +83,40 @@ public class GraphReader {
         return _vertices.get(u.getLabel());
     }
 
+
+    /**
+     *
+     * @return
+     */
+    public Map<Object, Vertex> getVerticeMap(){
+        return _vertices;
+    }
+
+    /**
+     *
+     * @param label
+     * @return
+     */
+    public Vertex getVertexByLabel(Object label){
+        return _vertices.get(label);
+    }
+
+    /**
+     *
+     * @return
+     */
+    public List<Vertex> getVerticeList(){
+        List<Vertex> out = new LinkedList<>();
+        for(Map.Entry<Object, Vertex> e : _vertices.entrySet()){
+            out.add(e.getValue());
+        }
+        return out;
+    }
+
+    /**
+     *
+     * @return
+     */
     public static Graph getGraph() {
         return _graph;
     }
