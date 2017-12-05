@@ -192,5 +192,11 @@ public class AdjacencyMatrix<E extends Comparable> extends AdjacencyStructure<E>
         return neighbours;
     }
 
+    @Override
+    public Vertex getNextOutgoingVertex(Vertex n) {
+        List<Vertex> _allNeighbours = getOutgoingVertices(n);
+        return _allNeighbours.get(0);
+    }
+
 
 }

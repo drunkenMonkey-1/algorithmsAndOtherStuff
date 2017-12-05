@@ -1,12 +1,16 @@
 package fhv.at.mwi.graph_structure;
 
+import java.io.*;
 import java.util.List;
 
 /**
  * Structure to manage nodes and edges of a graph
  * @param <E>
  */
-public abstract class AdjacencyStructure<E extends Comparable> {
+public abstract class AdjacencyStructure<E extends Comparable>{
+
+    protected AdjacencyStructure() {
+    }
 
     public abstract List print();
 
@@ -27,5 +31,6 @@ public abstract class AdjacencyStructure<E extends Comparable> {
     public abstract int numOfOutgoingNeighbour(Vertex n1);
     public abstract int numOfIngoingNeighbour(Vertex n1);
     public abstract List<Vertex> getOutgoingVertices(Vertex n);
+    public abstract Vertex getNextOutgoingVertex(Vertex n);
 
 }

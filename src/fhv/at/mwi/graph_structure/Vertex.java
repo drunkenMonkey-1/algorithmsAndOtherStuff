@@ -1,6 +1,8 @@
 package fhv.at.mwi.graph_structure;
 
 
+import java.io.Serializable;
+
 public class Vertex<T> implements Comparable<Vertex>{
 
     private T _label;

@@ -7,7 +7,7 @@ public class AdjacencyList<E extends Comparable> extends AdjacencyStructure<E> {
     private HashMap<Vertex, Map<Vertex, E>> _adjList = new HashMap<>();
     private E _defaultWeight;
 
-    public AdjacencyList(E defaultWeight){
+    public AdjacencyList(E defaultWeight) {
         _defaultWeight = defaultWeight;
     }
 
@@ -134,5 +134,11 @@ public class AdjacencyList<E extends Comparable> extends AdjacencyStructure<E> {
             _vertices.add(entry.getKey());
         }
         return _vertices;
+    }
+
+    @Override
+    public Vertex getNextOutgoingVertex(Vertex n) {
+        List<Vertex> _allNeighbours = getOutgoingVertices(n);
+        return _allNeighbours.get(0);
     }
 }

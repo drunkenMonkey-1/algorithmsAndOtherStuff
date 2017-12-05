@@ -14,11 +14,20 @@ public class GraphMain {
             GraphReader gReader = new GraphReader("house.txt");
             Graph out = GraphReader.getGraph();
 
-            out.doubleDisconnectVertices(gReader.getVertexByLabel("a"), gReader.getVertexByLabel("c"));
-            out.doubleDisconnectVertices(gReader.getVertexByLabel("c"), gReader.getVertexByLabel("d"));
-            out.doubleDisconnectVertices(gReader.getVertexByLabel("c"), gReader.getVertexByLabel("e"));
+//            out.doubleDisconnectVertices(gReader.getVertexByLabel("a"), gReader.getVertexByLabel("c"));
+//            out.doubleDisconnectVertices(gReader.getVertexByLabel("c"), gReader.getVertexByLabel("d"));
+//            out.doubleDisconnectVertices(gReader.getVertexByLabel("c"), gReader.getVertexByLabel("e"));
 
-            System.out.println(out.checkForOpenEulerianPath(gReader.getVertexByLabel("a")));
+            //System.out.println(out.checkForOpenEulerianPath(gReader.getVertexByLabel("a")));
+            try {
+                List<Vertex> eulerianPath = out.getEulerianPath(gReader.getVertexByLabel("a"));
+                Iterator<Vertex> vertextIt = eulerianPath.iterator();
+                while(vertextIt.hasNext()){
+                    System.out.println(vertextIt.next().toString());
+                }
+            } catch (GraphMethodException e) {
+                e.printStackTrace();
+            }
 
             Iterator igr = out.print().iterator();
             while(igr.hasNext()){
