@@ -2,7 +2,7 @@ package fhv.at.mwi.graph_structure;
 
 import java.util.*;
 
-public class AdjacencyList<E extends Comparable> extends AdjacencyStructure<E> {
+public class AdjacencyList<E> extends AdjacencyStructure<E> {
 
     private HashMap<Vertex, Map<Vertex, E>> _adjList = new HashMap<>();
     private E _defaultWeight;
@@ -17,7 +17,7 @@ public class AdjacencyList<E extends Comparable> extends AdjacencyStructure<E> {
         for (Map.Entry<Vertex, Map<Vertex, E>> entry : _adjList.entrySet()) {
             _outList.add(entry.getKey().getLabel() + " -> ");
             for(Map.Entry<Vertex, E> e : _adjList.get(entry.getKey()).entrySet()){
-                _outList.add(" [" + e.getKey().getLabel() + ", " + e.getValue() + "]");
+                _outList.add(" [" + e.getKey().getLabel() + ", " + e.getValue().toString() + "]");
             }
             _outList.add("\n");
         }

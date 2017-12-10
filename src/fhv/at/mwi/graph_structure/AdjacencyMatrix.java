@@ -2,7 +2,7 @@ package fhv.at.mwi.graph_structure;
 
 import java.util.*;
 
-public class AdjacencyMatrix<E extends Comparable> extends AdjacencyStructure<E> {
+public class AdjacencyMatrix<E> extends AdjacencyStructure<E> {
 
     private int _vertexIndex = 0;
     private Map<Vertex, Integer> _indexNodeMap = new Hashtable<>();
@@ -27,7 +27,7 @@ public class AdjacencyMatrix<E extends Comparable> extends AdjacencyStructure<E>
             int columns = _matrix[i].length;
             _outList.add( _verticies.get(i).getLabel() + " ");
             for(int x = 0; x < columns; x++){
-                _outList.add( _matrix[i][x] + " ");
+                _outList.add( _matrix[i][x].toString() + " ");
             }
             _outList.add("\n");
         }

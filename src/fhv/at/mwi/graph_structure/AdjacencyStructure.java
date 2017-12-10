@@ -7,7 +7,7 @@ import java.util.List;
  * Structure to manage nodes and edges of a graph
  * @param <E>
  */
-public abstract class AdjacencyStructure<E extends Comparable>{
+public abstract class AdjacencyStructure<E>{
 
     protected AdjacencyStructure() {
     }

@@ -4,25 +4,26 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
 
-public class Graph {
+public class Graph<V> {
 
-    private AdjacencyStructure<Integer> _adStruct;
+    private AdjacencyStructure<V> _adStruct;
+
     private List<Vertex> _startVertices = new LinkedList<>();
-    private static final int _defaultWeight = 1;
+    private  V _defaultWeight ;
     private Stack<Vertex> _rStack = new Stack<>();
     private List<Vertex> _path = new LinkedList<>();
-
     /**
      * Create a new graph
      * @param st The Struct type depends on how you use the graph. Can be StructType.MATRIX oder StructType.LIST
      */
-    public Graph(StructType st){
+    public Graph(StructType st, V defaultWeight){
+        _defaultWeight = defaultWeight;
         switch (st){
             case LIST:
-                _adStruct = new AdjacencyList<>(_defaultWeight);
+                _adStruct = new AdjacencyList<V>(_defaultWeight);
                 break;
             case MATRIX:
-                _adStruct = new AdjacencyMatrix<>(_defaultWeight);
+                _adStruct = new AdjacencyMatrix<V>(_defaultWeight);
                 break;
             default:
                 // exception
@@ -48,13 +49,13 @@ public class Graph {
     public void remove(Vertex n){
         _adStruct.removeVertex(n);
     }
-    public void connect(Vertex n1, Vertex n2, int weight){
+    public void connect(Vertex n1, Vertex n2, V weight){
         _adStruct.connectVertices(n1, n2, weight);
     }
     public void connect(Vertex n1, Vertex n2){
         _adStruct.connectVertices(n1, n2);
     }
-    public void doubleConnect(Vertex n1, Vertex n2, int weight){
+    public void doubleConnect(Vertex n1, Vertex n2, V weight){
         _adStruct.doubleConnectVertices(n1, n2, weight);
     }
     public void disconnectVertices(Vertex n1, Vertex n2) { _adStruct.disconnectVertices(n1, n2); }
@@ -65,7 +66,7 @@ public class Graph {
 
     public List<Vertex> getNeighbours(Vertex n){ return _adStruct.getOutgoingVertices(n); }
 
-    public AdjacencyStructure<Integer> getAdStruct() {
+    public AdjacencyStructure<V> getAdStruct() {
         return _adStruct;
     }
 
@@ -160,5 +161,8 @@ public class Graph {
         }
         /* If the a vertex has no neighbours and the Stack is empty, the method will abort here */
     }
+
+
+
 
 }
