@@ -1,6 +1,7 @@
 package fhv.at.mwi.graph_structure;
 
 import java.io.*;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -33,5 +34,7 @@ public abstract class AdjacencyStructure<E>{
     public abstract List<Vertex> getOutgoingVertices(Vertex n);
     public abstract Vertex getNextOutgoingVertex(Vertex n);
     public abstract List<Vertex> getVertices();
+
+    public abstract HashMap<Vertex, List<Edge<E>>> getEdgeMap();
 
 }

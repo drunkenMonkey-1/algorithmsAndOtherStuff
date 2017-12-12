@@ -150,4 +150,18 @@ public class AdjacencyList<E> extends AdjacencyStructure<E> {
         }
         return _outList;
     }
+
+    @Override
+    public HashMap<Vertex, List<Edge<E>>> getEdgeMap() {
+        HashMap<Vertex, List<Edge<E>>> outList = new HashMap<>();
+        for (Map.Entry<Vertex, Map<Vertex, E>> entry : _adjList.entrySet()) {
+            LinkedList<Edge<E>> tempList = new LinkedList<>();
+            for(Map.Entry<Vertex, E> e : _adjList.get(entry.getKey()).entrySet()) {
+                tempList.add(new Edge<>(entry.getKey(), e.getKey(), e.getValue()));
+            }
+            outList.put(entry.getKey(), tempList);
+        }
+        return outList;
+    }
+
 }

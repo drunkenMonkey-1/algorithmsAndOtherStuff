@@ -1,8 +1,13 @@
-package fhv.at.mwi.expression_parser;
+package fhv.at.mwi.graph_structure;
 
 import fhv.at.mwi.graph_structure.Vertex;
 
 public class Edge<E> {
+
+    private Vertex _v1;
+    private Vertex _v2;
+    private boolean _visited;
+    private E _weight;
 
     public Vertex get_v1() {
         return _v1;
@@ -28,21 +33,28 @@ public class Edge<E> {
         this._weight = _weight;
     }
 
-    private Vertex _v1;
-    private Vertex _v2;
-    private E _weight;
 
     public Edge(Vertex v1, Vertex v2, E weight){
         _v1 = v1;
         _v2 = v2;
         _weight = weight;
     }
+
     public Edge(Vertex v1, Vertex v2){
         this(v1, v2, null);
     }
 
+
     @Override
     public String toString(){
         return _v1.getLabel() + " | " + _v2.getLabel() + " - " + _weight;
+    }
+
+    public boolean isVisited() {
+        return _visited;
+    }
+
+    public void setVisited(boolean _visited) {
+        this._visited = _visited;
     }
 }

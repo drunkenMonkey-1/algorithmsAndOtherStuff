@@ -5,7 +5,8 @@ public class Vertex<T> implements Comparable<Vertex>{
 
     private T _label;
     private boolean _visited;
-    private int _property;
+    private long _property;
+
     public Vertex(){
         _label = null;
     }
@@ -15,7 +16,7 @@ public class Vertex<T> implements Comparable<Vertex>{
         _property = -1;
     }
 
-    public Vertex(T label, int property){
+    public Vertex(T label, long property){
         _label = label;
         _property = property;
     }
@@ -29,11 +30,11 @@ public class Vertex<T> implements Comparable<Vertex>{
         return _label;
     }
 
-    public int getProperty() {
+    public long getProperty() {
         return _property;
     }
 
-    public void setProperty(int _property) {
+    public void setProperty(long _property) {
         this._property = _property;
     }
 
@@ -59,6 +60,6 @@ public class Vertex<T> implements Comparable<Vertex>{
 
     @Override
     public String toString(){
-        return _label + " | " + Integer.toString(_property);
+        return _label + " | " + Long.toString(_property);
     }
 }

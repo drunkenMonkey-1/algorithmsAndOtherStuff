@@ -1,5 +1,6 @@
 package fhv.at.mwi.expression_parser;
 
+import fhv.at.mwi.graph_structure.Edge;
 import fhv.at.mwi.graph_structure.Vertex;
 
 public class EdgeExpression implements Expression<Edge> {

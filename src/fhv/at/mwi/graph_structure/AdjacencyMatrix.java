@@ -203,5 +203,10 @@ public class AdjacencyMatrix<E> extends AdjacencyStructure<E> {
         return _verticies;
     }
 
+    @Override
+    public HashMap<Vertex, List<Edge<E>>> getEdgeMap() {
+        return null;
+    }
+
 
 }

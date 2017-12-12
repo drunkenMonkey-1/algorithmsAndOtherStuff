@@ -1,9 +1,6 @@
 package fhv.at.mwi.expression_parser;
 
-import fhv.at.mwi.graph_structure.Graph;
-import fhv.at.mwi.graph_structure.StructType;
-import fhv.at.mwi.graph_structure.Vertex;
-import fhv.at.mwi.graph_structure.VertexExistenceException;
+import fhv.at.mwi.graph_structure.*;
 
 import java.io.File;
 import java.util.HashMap;
