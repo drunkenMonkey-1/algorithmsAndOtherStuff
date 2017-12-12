@@ -1,10 +1,12 @@
 package tests.graph_test;
 
 import fhv.at.mwi.graph_algorithms.BellmanFordAlgorithm;
+import fhv.at.mwi.graph_algorithms.FindPathsAlgorithm;
 import fhv.at.mwi.graph_structure.*;
 import org.junit.jupiter.api.Test;
 
 import java.util.Iterator;
+import java.util.List;
 
 class GraphTest {
 
@@ -13,7 +15,7 @@ class GraphTest {
     public void testPathFinder(){
         Graph<LongOperator> testGraph = new Graph<>(StructType.LIST, new LongOperator(1L, EOperator.MULTIPLY));
         Vertex vertices[] = {
-                new Vertex<>("a"),      // 0
+                new Vertex<>("a", 33),      // 0
                 new Vertex<>("b"),      // 1
                 new Vertex<>("c"),      // 2
                 new Vertex<>("d"),      // 3
@@ -55,10 +57,18 @@ class GraphTest {
         testGraph.doubleConnect(vertices[8], vertices[10], new LongOperator(265L, EOperator.SUBTRACT));
         testGraph.doubleConnect(vertices[8], vertices[11], new LongOperator(317L, EOperator.ADD));
         testGraph.doubleConnect(vertices[9], vertices[11], new LongOperator(9L, EOperator.SUBTRACT));
+        testGraph.doubleConnect(vertices[10], vertices[11], new LongOperator(3L, EOperator.MULTIPLY));
 
 
-        BellmanFordAlgorithm bfa = new BellmanFordAlgorithm(testGraph.getAdStruct());
-        bfa.operate();
+        FindPathsAlgorithm fpa = new FindPathsAlgorithm(testGraph.getAdStruct(), vertices[0], vertices[11]);
+        List<List<Vertex>> lv = fpa.operate();
+
+        for (List<Vertex> innerList : lv) {
+            for (Vertex pathNode : innerList) {
+                System.out.printf(" [%s] ", pathNode.toString());
+            }
+            System.out.printf("\n");
+        }
 
         Iterator gIt = testGraph.print().iterator();
         while(gIt.hasNext()){

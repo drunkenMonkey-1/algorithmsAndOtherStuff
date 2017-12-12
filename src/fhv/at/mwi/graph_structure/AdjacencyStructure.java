@@ -32,5 +32,6 @@ public abstract class AdjacencyStructure<E>{
     public abstract int numOfIngoingNeighbour(Vertex n1);
     public abstract List<Vertex> getOutgoingVertices(Vertex n);
     public abstract Vertex getNextOutgoingVertex(Vertex n);
+    public abstract List<Vertex> getVertices();
 
 }

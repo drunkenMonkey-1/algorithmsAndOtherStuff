@@ -141,4 +141,13 @@ public class AdjacencyList<E> extends AdjacencyStructure<E> {
         List<Vertex> _allNeighbours = getOutgoingVertices(n);
         return _allNeighbours.get(0);
     }
+
+    @Override
+    public List<Vertex> getVertices() {
+        LinkedList<Vertex> _outList = new LinkedList<>();
+        for (Map.Entry<Vertex, Map<Vertex, E>> entry : _adjList.entrySet()) {
+            _outList.add(entry.getKey());
+        }
+        return _outList;
+    }
 }

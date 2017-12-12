@@ -198,5 +198,10 @@ public class AdjacencyMatrix<E> extends AdjacencyStructure<E> {
         return _allNeighbours.get(0);
     }
 
+    @Override
+    public List<Vertex> getVertices() {
+        return _verticies;
+    }
+
 
 }

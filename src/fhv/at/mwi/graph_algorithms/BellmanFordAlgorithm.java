@@ -6,7 +6,7 @@ import fhv.at.mwi.graph_structure.Vertex;
 
 import java.util.List;
 
-public class BellmanFordAlgorithm implements IAlgorithm<List<Vertex>>{
+public class BellmanFordAlgorithm implements IAlgorithm<Vertex>{
 
     private AdjacencyStructure<LongOperator> _adStruct;
 
@@ -16,7 +16,7 @@ public class BellmanFordAlgorithm implements IAlgorithm<List<Vertex>>{
 
 
     @Override
-    public List<Vertex> operate() {
+    public List<List<Vertex>> operate() {
         return null;
     }
 }

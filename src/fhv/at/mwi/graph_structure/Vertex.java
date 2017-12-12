@@ -1,13 +1,11 @@
 package fhv.at.mwi.graph_structure;
 
 
-import java.io.Serializable;
-
 public class Vertex<T> implements Comparable<Vertex>{
 
     private T _label;
+    private boolean _visited;
     private int _property;
-
     public Vertex(){
         _label = null;
     }
@@ -41,6 +39,14 @@ public class Vertex<T> implements Comparable<Vertex>{
 
     public boolean equals(Vertex o){
         return _label.equals(o);
+    }
+
+    public boolean isVisited() {
+        return _visited;
+    }
+
+    public void setVisited(boolean _visited) {
+        this._visited = _visited;
     }
 
     @Override
