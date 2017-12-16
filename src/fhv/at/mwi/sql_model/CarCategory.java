@@ -1,9 +1,17 @@
 package fhv.at.mwi.sql_model;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="autokategorie")
 public class CarCategory {
 
+    @Id
+    @Column(name="kategorie_bezeichnung")
     private char _categoryType;
+    @Column(name="grundtarif")
     private int _basePrice;
+    @Column(name="km_preis")
     private int _kmPrice;
 
     public char get_categoryType() {

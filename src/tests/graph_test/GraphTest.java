@@ -1,6 +1,5 @@
 package tests.graph_test;
 
-import fhv.at.mwi.graph_algorithms.BellmanFordAlgorithm;
 import fhv.at.mwi.graph_algorithms.FindPathsAlgorithm;
 import fhv.at.mwi.graph_structure.*;
 import org.junit.jupiter.api.Test;
@@ -9,7 +8,6 @@ import java.util.Iterator;
 import java.util.List;
 
 class GraphTest {
-
 
     @Test
     public void testPathFinder(){
