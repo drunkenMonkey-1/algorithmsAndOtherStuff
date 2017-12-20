@@ -7,26 +7,24 @@
   </component>
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/sequence1.txt" line="0" />
-    <bookmark url="file://$PROJECT_DIR$/src/tests/graph_test/DijkstraAlgorithmTest.java" line="20" />
+    <bookmark url="file://$PROJECT_DIR$/src/tests/graph_test/DijkstraAlgorithmTest.java" line="26" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e131d282-0f23-4c3f-bbef-955ae9acfb03" name="Default" comment="update">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/GraphRequirementException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/PrimAlgorithm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/SeriesConnectionAlgorithm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/graph_test/DijkstraAlgorithmTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/graph_test/SeriesConnectionAlgorithmTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/BellmanFordAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/BellmanFordAlgorithm.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/IRelaxOperation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tests/graph_test/PrimAlgorithmTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/DijkstraAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/DijkstraAlgorithm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/FindPathsAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/FindPathsAlgorithm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/IAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/IAlgorithm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_model/CarCategory.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_model/CarCategory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_1_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_1_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/required.xml" afterPath="$PROJECT_DIR$/.idea/libraries/required.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/SeriesConnectionAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/SeriesConnectionAlgorithm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/tests/graph_test/DijkstraAlgorithmTest.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/tests/graph_test/DijkstraAlgorithmTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/tests/graph_test/SeriesConnectionAlgorithmTest.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/tests/graph_test/SeriesConnectionAlgorithmTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic_algorithms.iml" afterPath="$PROJECT_DIR$/basic_algorithms.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/DijkstraAlgorithm.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/DijkstraAlgorithm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/IAlgorithm.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/IAlgorithm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/PrimAlgorithm.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/PrimAlgorithm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/SeriesConnectionAlgorithm.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/SeriesConnectionAlgorithm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/graph_test/DijkstraAlgorithmTest.java" afterPath="$PROJECT_DIR$/src/tests/graph_test/DijkstraAlgorithmTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/graph_test/SeriesConnectionAlgorithmTest.java" afterPath="$PROJECT_DIR$/src/tests/graph_test/SeriesConnectionAlgorithmTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,21 +58,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="SeriesConnectionAlgorithm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/SeriesConnectionAlgorithm.java">
+      <file leaf-file-name="DijkstraAlgorithm.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/DijkstraAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="102">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DijkstraAlgorithm.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/DijkstraAlgorithm.java">
+      <file leaf-file-name="IRelaxOperation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/IRelaxOperation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+            <state relative-caret-position="119">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,8 +83,8 @@
       <file leaf-file-name="PrimAlgorithm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/PrimAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="11" column="79" lean-forward="false" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -100,9 +98,9 @@
         <option value="JavaFXApplication" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Exception" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -137,9 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/DelimParser.java" />
-        <option value="$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/VertexExpression.java" />
-        <option value="$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/EdgeExpression.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/Edge.java" />
         <option value="$PROJECT_DIR$/graph_in.txt" />
         <option value="$PROJECT_DIR$/house.txt" />
@@ -164,7 +159,6 @@
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/GraphTest.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/Graph.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/LongOperator.java" />
-        <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/IAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/BellmanFordAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/Edge.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/AdjacencyStructure.java" />
@@ -183,11 +177,15 @@
         <option value="$PROJECT_DIR$/src/tests/graph_test/SpanningTreeAlgorithmTest.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/DijkstraAlgorithmTest.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/Vertex.java" />
-        <option value="$PROJECT_DIR$/src/tests/graph_test/DijkstraAlgorithmTest.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/IAlgorithm.java" />
         <option value="$PROJECT_DIR$/src/tests/graph_test/SeriesConnectionAlgorithmTest.java" />
-        <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/PrimAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/DijkstraAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/tests/graph_test/DijkstraAlgorithmTest.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/PrimAlgorithmTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/graph_test/PrimAlgorithmTest.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/SeriesConnectionAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/DijkstraAlgorithm.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/IRelaxOperation.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/PrimAlgorithm.java" />
       </list>
     </option>
   </component>
@@ -219,7 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,16 +258,12 @@
             </path>
             <path>
               <item name="algorithmsAndOtherStuff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithmsAndOtherStuff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="graph_test" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -283,6 +276,8 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,6 +291,9 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/files/IntelliJ Projects/algorithmsAndOtherStuff/src/fhv/at/mwi/search_tree/BinaryTree.java" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -305,11 +303,11 @@
       <recent name="fhv.at.mwi.priority_queue" />
       <recent name="tests" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="fhv.at.mwi.tree_structure" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\files\IntelliJ Projects\algorithmsAndOtherStuff" />
@@ -330,7 +328,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SeriesConnectionAlgorithmTest.validSeriesCircuit">
+  <component name="RunManager" selected="JUnit.PrimAlgorithmTest.primSpanningTreeTest">
     <configuration name="DijkstraAlgorithmTest.findPathDijkstra" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -375,6 +373,31 @@
       <module name="basic_algorithms" />
       <envs />
     </configuration>
+    <configuration name="PrimAlgorithmTest.primSpanningTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.graph_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="basic_algorithms" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tests.graph_test" />
+      <option name="MAIN_CLASS_NAME" value="tests.graph_test.PrimAlgorithmTest" />
+      <option name="METHOD_NAME" value="primSpanningTreeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="SeriesConnectionAlgorithmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -400,6 +423,31 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="SeriesConnectionAlgorithmTest.validCircuitPrimTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="tests.graph_test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="basic_algorithms" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="tests.graph_test" />
+      <option name="MAIN_CLASS_NAME" value="tests.graph_test.SeriesConnectionAlgorithmTest" />
+      <option name="METHOD_NAME" value="validCircuitPrimTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="SeriesConnectionAlgorithmTest.validSeriesCircuit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -413,56 +461,6 @@
       <option name="PACKAGE_NAME" value="tests.graph_test" />
       <option name="MAIN_CLASS_NAME" value="tests.graph_test.SeriesConnectionAlgorithmTest" />
       <option name="METHOD_NAME" value="validSeriesCircuit" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="SeriesConnectionAlgorithmTest.validSeriesCircuit2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.graph_test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="basic_algorithms" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests.graph_test" />
-      <option name="MAIN_CLASS_NAME" value="tests.graph_test.SeriesConnectionAlgorithmTest" />
-      <option name="METHOD_NAME" value="validSeriesCircuit2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="SeriesConnectionAlgorithmTest.validSeriesCircuitX" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="tests.graph_test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="basic_algorithms" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="tests.graph_test" />
-      <option name="MAIN_CLASS_NAME" value="tests.graph_test.SeriesConnectionAlgorithmTest" />
-      <option name="METHOD_NAME" value="validSeriesCircuitX" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -504,18 +502,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.SeriesConnectionAlgorithmTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.SeriesConnectionAlgorithmTest.validSeriesCircuit2" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.SeriesConnectionAlgorithmTest.validSeriesCircuitX" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.DijkstraAlgorithmTest.findPathDijkstra" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.SeriesConnectionAlgorithmTest.validSeriesCircuit" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.DijkstraAlgorithmTest.findPathDijkstra" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SeriesConnectionAlgorithmTest.validSeriesCircuit" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SeriesConnectionAlgorithmTest.validCircuitPrimTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PrimAlgorithmTest.primSpanningTreeTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SeriesConnectionAlgorithmTest.validSeriesCircuit" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DijkstraAlgorithmTest.findPathDijkstra" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.PrimAlgorithmTest.primSpanningTreeTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SeriesConnectionAlgorithmTest.validSeriesCircuit" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.SeriesConnectionAlgorithmTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SeriesConnectionAlgorithmTest.validSeriesCircuitX" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SeriesConnectionAlgorithmTest.validSeriesCircuit2" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SeriesConnectionAlgorithmTest.validCircuitPrimTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DijkstraAlgorithmTest.findPathDijkstra" />
       </list>
     </recent_temporary>
   </component>
@@ -591,6 +589,9 @@
       <workItem from="1513447780124" duration="6911000" />
       <workItem from="1513456979740" duration="9840000" />
       <workItem from="1513513017216" duration="19176000" />
+      <workItem from="1513695965657" duration="269000" />
+      <workItem from="1513708472082" duration="10298000" />
+      <workItem from="1513719887015" duration="6060000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1507895132040</created>
@@ -603,39 +604,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DijkstraAlgorithmTest_findPathDijkstra - 2017.12.17 at 17h 10m 35s.xml">
+    <history-entry file="DijkstraAlgorithmTest_findPathDijkstra - 2017.12.19 at 23h 25m 45s.xml">
       <configuration name="DijkstraAlgorithmTest.findPathDijkstra" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeriesConnectionAlgorithmTest_validSeriesCircuit - 2017.12.17 at 17h 09m 36s.xml">
-      <configuration name="SeriesConnectionAlgorithmTest.validSeriesCircuit" configurationId="JUnit" />
+    <history-entry file="DijkstraAlgorithmTest_findPathDijkstra - 2017.12.19 at 23h 27m 08s.xml">
+      <configuration name="DijkstraAlgorithmTest.findPathDijkstra" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeriesConnectionAlgorithmTest_validSeriesCircuit - 2017.12.17 at 17h 10m 30s.xml">
-      <configuration name="SeriesConnectionAlgorithmTest.validSeriesCircuit" configurationId="JUnit" />
+    <history-entry file="DijkstraAlgorithmTest_findPathDijkstra - 2017.12.19 at 23h 27m 49s.xml">
+      <configuration name="DijkstraAlgorithmTest.findPathDijkstra" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeriesConnectionAlgorithmTest_validSeriesCircuit - 2017.12.17 at 17h 30m 30s.xml">
-      <configuration name="SeriesConnectionAlgorithmTest.validSeriesCircuit" configurationId="JUnit" />
+    <history-entry file="DijkstraAlgorithmTest_findPathDijkstra - 2017.12.19 at 23h 27m 58s.xml">
+      <configuration name="DijkstraAlgorithmTest.findPathDijkstra" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeriesConnectionAlgorithmTest_validSeriesCircuit - 2017.12.17 at 17h 31m 34s.xml">
-      <configuration name="SeriesConnectionAlgorithmTest.validSeriesCircuit" configurationId="JUnit" />
+    <history-entry file="DijkstraAlgorithmTest_findPathDijkstra - 2017.12.19 at 23h 28m 47s.xml">
+      <configuration name="DijkstraAlgorithmTest.findPathDijkstra" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeriesConnectionAlgorithmTest_validSeriesCircuit - 2017.12.17 at 17h 33m 24s.xml">
-      <configuration name="SeriesConnectionAlgorithmTest.validSeriesCircuit" configurationId="JUnit" />
+    <history-entry file="PrimAlgorithmTest_primSpanningTreeTest - 2017.12.19 at 23h 55m 39s.xml">
+      <configuration name="PrimAlgorithmTest.primSpanningTreeTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeriesConnectionAlgorithmTest_validSeriesCircuit - 2017.12.17 at 17h 39m 01s.xml">
-      <configuration name="SeriesConnectionAlgorithmTest.validSeriesCircuit" configurationId="JUnit" />
+    <history-entry file="SeriesConnectionAlgorithmTest - 2017.12.19 at 23h 48m 39s.xml">
+      <configuration name="SeriesConnectionAlgorithmTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeriesConnectionAlgorithmTest_validSeriesCircuit - 2017.12.17 at 17h 39m 20s.xml">
-      <configuration name="SeriesConnectionAlgorithmTest.validSeriesCircuit" configurationId="JUnit" />
+    <history-entry file="SeriesConnectionAlgorithmTest_validCircuitPrimTest - 2017.12.19 at 23h 35m 22s.xml">
+      <configuration name="SeriesConnectionAlgorithmTest.validCircuitPrimTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeriesConnectionAlgorithmTest_validSeriesCircuit - 2017.12.17 at 17h 39m 36s.xml">
-      <configuration name="SeriesConnectionAlgorithmTest.validSeriesCircuit" configurationId="JUnit" />
+    <history-entry file="SeriesConnectionAlgorithmTest_validCircuitPrimTest - 2017.12.19 at 23h 48m 35s.xml">
+      <configuration name="SeriesConnectionAlgorithmTest.validCircuitPrimTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SeriesConnectionAlgorithmTest_validSeriesCircuit - 2017.12.17 at 17h 39m 52s.xml">
+    <history-entry file="SeriesConnectionAlgorithmTest_validSeriesCircuit - 2017.12.19 at 23h 49m 56s.xml">
       <configuration name="SeriesConnectionAlgorithmTest.validSeriesCircuit" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="463470000" />
+    <option name="totallyTimeSpent" value="480097000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -656,17 +657,16 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21527041" sideWeight="0.47135416" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3202545" sideWeight="0.4734375" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49583334" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3202545" sideWeight="0.5286458" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3202545" sideWeight="0.5265625" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49583334" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -681,6 +681,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49583334" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -695,7 +696,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="62" />
+      <option name="time" value="63" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -704,20 +705,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/VertexExistenceException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/InvalidExpressionException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/expression_parser/ExpressionScanner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
@@ -905,14 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/GraphMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="55" column="15" lean-forward="true" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/sql_model/CarCategory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -927,61 +906,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/IAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/junit/lib/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/function/Executable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/GraphRequirementException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-          <folding>
-            <element signature="e#145#146#0" expanded="false" />
-            <element signature="e#171#172#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/AdjacencyStructure.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/junit/lib/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/function/Executable.class" />
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1908">
           <caret line="151" column="9" lean-forward="false" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/AdjacencyList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="83" column="52" lean-forward="false" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/FindPathsAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="19" column="61" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="54" column="35" lean-forward="false" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,10 +929,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/AdjacencyStructure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/GraphMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_structure/AdjacencyList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/graph_test/SeriesConnectionAlgorithmTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="98" column="13" lean-forward="true" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+        <state relative-caret-position="1003">
+          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/graph_test/PrimAlgorithmTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="63" lean-forward="true" selection-start-line="46" selection-start-column="63" selection-end-line="46" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1013,43 +974,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/graph_test/DijkstraAlgorithmTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        <state relative-caret-position="-2">
+          <caret line="30" column="44" lean-forward="true" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/test.java">
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/GraphRequirementException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="68">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/IAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/SeriesConnectionAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="1445">
+          <caret line="91" column="116" lean-forward="false" selection-start-line="91" selection-start-column="116" selection-end-line="91" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/FindPathsAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="61" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/PrimAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="11" column="79" lean-forward="false" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/IRelaxOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/DijkstraAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

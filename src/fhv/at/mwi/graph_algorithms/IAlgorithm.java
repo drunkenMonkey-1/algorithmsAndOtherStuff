@@ -5,5 +5,5 @@ import fhv.at.mwi.graph_structure.Vertex;
 import java.util.List;
 
 public interface IAlgorithm<V> {
-    public V operate() throws GraphRequirementException;
+    V operate() throws GraphRequirementException;
 }

@@ -1,6 +1,5 @@
 package tests.graph_test;
 
-import fhv.at.mwi.graph_algorithms.DijkstraAlgorithm;
 import fhv.at.mwi.graph_algorithms.GraphRequirementException;
 import fhv.at.mwi.graph_algorithms.PrimAlgorithm;
 import fhv.at.mwi.graph_structure.Graph;
@@ -10,16 +9,13 @@ import fhv.at.mwi.graph_structure.VertexExistenceException;
 import org.junit.jupiter.api.Test;
 
 import java.util.Iterator;
-import java.util.List;
-import java.util.PriorityQueue;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DijkstraAlgorithmTest {
-
+class PrimAlgorithmTest {
 
     @Test
-    void findPathDijkstra() {
+    public void primSpanningTreeTest(){
 
         Graph<Long> testGraph = new Graph<>(StructType.LIST, -1L);
         Vertex vertices[] = {
@@ -50,11 +46,16 @@ class DijkstraAlgorithmTest {
         testGraph.doubleConnect(vertices[3], vertices[4], 25L);
         testGraph.doubleConnect(vertices[4], vertices[6], 30L);
 
-        DijkstraAlgorithm dja = new DijkstraAlgorithm(testGraph.getAdStruct(), vertices[0], vertices[2]);
-        dja.operate();
-        List<Vertex> path = dja.getSimplifiedPath();
-
-        System.out.println(path);
+        PrimAlgorithm pa = new PrimAlgorithm(testGraph.getAdStruct(), vertices[0]);
+        Iterator igr = null;
+        try {
+            igr = pa.operate().print().iterator();
+        } catch (GraphRequirementException e) {
+            e.printStackTrace();
+        }
+        while(igr.hasNext()){
+            System.out.printf("%10s", igr.next());
+        }
     }
 
 }
