@@ -89,7 +89,7 @@ public class SeriesConnectionAlgorithm implements IAlgorithm<AdjacencyStructure>
     }
 
 
-    // Spanning Tree
+    // Spanning Tree (just a simple spanning tree, containing all nodes without the edge weights taken into account)
     //        HashSet<Vertex> visited = new HashSet<>();
     //        for(Vertex vertex : vertices){
     //            List<Vertex> neighbourVertices = _adStruct.getOutgoingVertices(vertex);
