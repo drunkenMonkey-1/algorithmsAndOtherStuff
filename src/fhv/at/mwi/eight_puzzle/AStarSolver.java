@@ -15,33 +15,37 @@ public class AStarSolver extends Solver implements IAlgorithm<List<PuzzleNode>>{
     });
     private HashSet<PuzzleNode> _closedList = new HashSet<>();
     private IHeuristics _heuristic;
+    private int _estimatedExpandOperations = 0;
 
     private PuzzleNode _startNode = null;
 
     private List<PuzzleNode> solve(PuzzleNode node){
         _pqueue.add(node);
+        _estimatedExpandOperations = 0;
         HashMap<PuzzleNode, Integer> depthTable = new HashMap<>();
         depthTable.put(node, 0);
         PuzzleNode current = null;
 
         while(!_pqueue.isEmpty()){
             current = _pqueue.poll();
-            //System.out.println("Chosen: \n" + current.toString());
             _closedList.add(current);
             if(current.isIdeal(PuzzleNode._idealState)){
                 _pqueue.clear();
                 // return -> remove else
             } else{
                 LinkedList<PuzzleNode> neighbours = new LinkedList<>(current.getNeighbourNodes());
+                _estimatedExpandOperations++;
                 for(PuzzleNode neighbourNode : neighbours){
                     if(!_closedList.contains(neighbourNode)){
                         int depth = depthTable.get(current) + 1;
+                        // if open list already contains neighbour and no better cost is possible ignore him
                         if(_pqueue.contains(neighbourNode) && depth >= depthTable.get(neighbourNode)){
 
                         } else {
                             neighbourNode.setParent(current);
                             depthTable.put(neighbourNode, depth);
 
+                            // if open list already contains neighbour -> distance update
                             if (_pqueue.contains(neighbourNode)) {
                                 _pqueue.remove(neighbourNode);
                                 neighbourNode.setCosts(depth + _heuristic.getCosts(neighbourNode));
@@ -51,14 +55,12 @@ public class AStarSolver extends Solver implements IAlgorithm<List<PuzzleNode>>{
                                 _pqueue.add(neighbourNode);
                             }
                         }
-                        // if open list already contains neighbour -> distance update
-                        // if open list already contains neighbour and no better cost is possible ignore him
                     }
 
                 }
             }
         }
-        return extractPath(current);
+        return extractPath(current, _estimatedExpandOperations);
 
     }
 

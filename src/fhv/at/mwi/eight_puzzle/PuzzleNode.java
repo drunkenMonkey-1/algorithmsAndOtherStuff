@@ -97,7 +97,20 @@ public class PuzzleNode {
     }
 
     public int getManhattanDistance(){
-        return 0;
+        int manhattanDistance = 0;
+        for(int i = 0; i < _matrix.length; i++){
+            if(_matrix[i] != _idealState[i]){
+                int currentX = i % _matrixDimension;
+                int currentY = i / _matrixDimension;
+
+                int goalPos = _matrix[i];
+                int goalX = goalPos % _matrixDimension;
+                int goalY = goalPos / _matrixDimension;
+
+                manhattanDistance += (Math.abs(currentX-goalX) + Math.abs(currentY-goalY));
+            }
+        }
+        return manhattanDistance;
     }
 
     public int getHammingDistance(){
