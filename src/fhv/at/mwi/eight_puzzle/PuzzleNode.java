@@ -82,7 +82,6 @@ public class PuzzleNode {
                 modifiedMatrix[_holePos] = modifiedMatrix[neighbourPositions[i]];
                 modifiedMatrix[neighbourPositions[i]] = 0;
                 PuzzleNode n = new PuzzleNode(modifiedMatrix, neighbourPositions[i]);
-                n.setParent(this);
                 neigbourNodes.add(n);
             }
         }
@@ -100,10 +99,11 @@ public class PuzzleNode {
     public int getManhattanDistance(){
         return 0;
     }
+
     public int getHammingDistance(){
         int wrongPositions = 0;
         for(int i = 0; i < _matrix.length; i++){
-            if(_matrix[i] != _idealState[i]){
+            if(_matrix[i] != _idealState[i] ){
                 wrongPositions++;
             }
         }
@@ -141,7 +141,7 @@ public class PuzzleNode {
             }
             lineBreakCounter++;
         }
-        return out.toString();
+        return out.toString() + "Costs: " + _costs + "\n";
     }
 
     @Override

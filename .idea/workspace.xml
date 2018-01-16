@@ -2,18 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd34d65f-8a06-4cdf-8d14-bac4afec0750" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/AStarSolver.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/BFS_Solver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/HammingDistance.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/IHeuristics.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/ManhattanHeuristic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/PuzzleSolverException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/Solver.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_connection/BrokerBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_connection/DatabaseFacade.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_connection/HbDatabaseFacade.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_connection/HibernateTestMain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_connection/ReservationBroker.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_model/Car.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_model/CarCategory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_model/CarType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_model/City.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_model/Contract.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_model/Customer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_model/ExtraEquipment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_model/Reservation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/sql_model/Station.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_connection/BrokerBase.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_connection/DatabaseFacade.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_connection/HbDatabaseFacade.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_connection/HibernateTestMain.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_connection/ReservationBroker.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_model/Car.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_model/CarCategory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_model/CarType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_model/City.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_model/Contract.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_model/Customer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_model/ExtraEquipment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_model/Reservation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/sql_model/Station.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/eight_puzzle/AStarSolver.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/eight_puzzle/AStarSolver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/AStarAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/AStarAlgorithm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/BellmanFordAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/BellmanFordAlgorithm.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/DijkstraAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/DijkstraAlgorithm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/PrimAlgorithm$1.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/PrimAlgorithm$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/FindPathsAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/FindPathsAlgorithm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/IAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/IAlgorithm.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/PrimAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/PrimAlgorithm.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_42_1_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_1_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/required.xml" afterPath="$PROJECT_DIR$/.idea/libraries/required.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/SeriesConnectionAlgorithm.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/fhv/at/mwi/graph_algorithms/SeriesConnectionAlgorithm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/basic_algorithms/tests/puzzle_test/EightPuzzleBruteforceTest.class" afterPath="$PROJECT_DIR$/out/production/basic_algorithms/tests/puzzle_test/EightPuzzleBruteforceTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/DFS_Solver.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/DFS_Solver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/AStarSolver.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/AStarSolver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/PuzzleNode.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/PuzzleNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/IAlgorithm.java" afterPath="$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/IAlgorithm.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tests/puzzle_test/EightPuzzleBruteforceTest.java" afterPath="$PROJECT_DIR$/src/tests/puzzle_test/EightPuzzleBruteforceTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,21 +60,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DFS_Solver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/DFS_Solver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BFS_Solver.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BFS_Solver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/BFS_Solver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="725">
+              <caret line="29" column="55" lean-forward="false" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,12 +72,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AStarSolver.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AStarSolver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/AStarSolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+            <state relative-caret-position="200">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IHeuristics.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/IHeuristics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManhattanHeuristic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/ManhattanHeuristic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+              <folding>
+                <element signature="e#145#146#0" expanded="true" />
+                <element signature="e#193#194#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HammingDistance.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/HammingDistance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+              <folding>
+                <element signature="e#141#142#0" expanded="true" />
+                <element signature="e#187#188#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PuzzleSolverException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/PuzzleSolverException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding>
+                <element signature="e#132#133#0" expanded="true" />
+                <element signature="e#158#159#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,12 +136,9 @@
       <file leaf-file-name="PuzzleNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/PuzzleNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="109" column="30" lean-forward="false" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
-              <folding>
-                <element signature="e#2786#2787#0" expanded="true" />
-                <element signature="e#2810#2811#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="300">
+              <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,8 +146,8 @@
       <file leaf-file-name="EightPuzzleBruteforceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/puzzle_test/EightPuzzleBruteforceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -112,10 +184,15 @@
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/DFS_Solver.java" />
-        <option value="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/PuzzleNode.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/BFS_Solver.java" />
-        <option value="$PROJECT_DIR$/src/tests/puzzle_test/EightPuzzleBruteforceTest.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/Solver.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/PuzzleSolverException.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/IHeuristics.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/ManhattanHeuristic.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/HammingDistance.java" />
         <option value="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/AStarSolver.java" />
+        <option value="$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/PuzzleNode.java" />
+        <option value="$PROJECT_DIR$/src/tests/puzzle_test/EightPuzzleBruteforceTest.java" />
       </list>
     </option>
   </component>
@@ -147,70 +224,57 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="algorithmsAndOtherStuff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithmsAndOtherStuff" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="algorithmsAndOtherStuff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithmsAndOtherStuff" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="algorithmsAndOtherStuff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithmsAndOtherStuff" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fhv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithmsAndOtherStuff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithmsAndOtherStuff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fhv" type="462c0819:PsiDirectoryNode" />
               <item name="mwi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="algorithmsAndOtherStuff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithmsAndOtherStuff" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fhv" type="462c0819:PsiDirectoryNode" />
-              <item name="mwi" type="462c0819:PsiDirectoryNode" />
-              <item name="analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithmsAndOtherStuff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithmsAndOtherStuff" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fhv" type="462c0819:PsiDirectoryNode" />
               <item name="mwi" type="462c0819:PsiDirectoryNode" />
               <item name="eight_puzzle" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="algorithmsAndOtherStuff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithmsAndOtherStuff" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mwi" type="462c0819:PsiDirectoryNode" />
+              <item name="graph_algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="algorithmsAndOtherStuff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algorithmsAndOtherStuff" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
               <item name="puzzle_test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algorithmsAndOtherStuff" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -359,50 +423,51 @@
       <updated>1515953589523</updated>
       <workItem from="1515953595397" duration="7899000" />
       <workItem from="1516046517923" duration="4865000" />
+      <workItem from="1516105570676" duration="7909000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 00h 42m 17s.xml">
+    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 14h 42m 50s.xml">
       <configuration name="EightPuzzleBruteforceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 00h 42m 19s.xml">
+    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 14h 58m 17s.xml">
       <configuration name="EightPuzzleBruteforceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 00h 42m 21s.xml">
+    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 14h 59m 44s.xml">
       <configuration name="EightPuzzleBruteforceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 00h 47m 57s.xml">
+    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 15h 00m 08s.xml">
       <configuration name="EightPuzzleBruteforceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 00h 48m 20s.xml">
+    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 15h 00m 16s.xml">
       <configuration name="EightPuzzleBruteforceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 00h 49m 00s.xml">
+    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 15h 02m 55s.xml">
       <configuration name="EightPuzzleBruteforceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 00h 49m 54s.xml">
+    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 15h 11m 37s.xml">
       <configuration name="EightPuzzleBruteforceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 00h 58m 59s.xml">
+    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 15h 11m 53s.xml">
       <configuration name="EightPuzzleBruteforceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 00h 59m 59s.xml">
+    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 15h 19m 01s.xml">
       <configuration name="EightPuzzleBruteforceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 01h 00m 22s.xml">
+    <history-entry file="EightPuzzleBruteforceTest - 2018.01.16 at 15h 33m 43s.xml">
       <configuration name="EightPuzzleBruteforceTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12764000" />
+    <option name="totallyTimeSpent" value="20673000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -410,7 +475,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26949543" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -438,15 +503,65 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/DFS_Solver.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <marker date="1516105495978" expanded="true" signature="701:807" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/AStarSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/PuzzleNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2725">
+          <caret line="109" column="30" lean-forward="false" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/puzzle_test/EightPuzzleBruteforceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/BFS_Solver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/DFS_Solver.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="44" />
-          <folding />
+          <folding>
+            <marker date="1516105495978" expanded="true" signature="701:807" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -464,10 +579,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding>
-            <element signature="e#2786#2787#0" expanded="true" />
-            <element signature="e#2810#2811#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -483,7 +595,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -505,49 +619,188 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="13" column="69" lean-forward="true" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/PuzzleNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="109" column="30" lean-forward="false" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="30" />
-          <folding>
-            <element signature="e#2786#2787#0" expanded="true" />
-            <element signature="e#2810#2811#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/DFS_Solver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <marker date="1516105495978" expanded="true" signature="701:807" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/sql_connection/HbDatabaseFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/puzzle_test/EightPuzzleBruteforceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/sql_model/CarCategory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/AStarSolver.java">
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/FindPathsAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="-200">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/graph_test/DijkstraAlgorithmTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-575">
+          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/graph_test/SeriesConnectionAlgorithmTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-875">
+          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/graph_test/PrimAlgorithmTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-725">
+          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/BFS_Solver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="725">
+          <caret line="29" column="55" lean-forward="false" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/Solver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/PrimAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/DijkstraAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/BellmanFordAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/AStarAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/graph_algorithms/SeriesConnectionAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/PuzzleSolverException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#158#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/IHeuristics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/HammingDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding>
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#187#188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/PuzzleNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/puzzle_test/EightPuzzleBruteforceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/ManhattanHeuristic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding>
+            <element signature="e#145#146#0" expanded="true" />
+            <element signature="e#193#194#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fhv/at/mwi/eight_puzzle/AStarSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
