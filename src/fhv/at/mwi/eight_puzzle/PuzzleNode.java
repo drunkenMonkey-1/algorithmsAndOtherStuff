@@ -2,6 +2,7 @@ package fhv.at.mwi.eight_puzzle;
 
 import fhv.at.mwi.general.Position;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -11,6 +12,9 @@ public class PuzzleNode {
     public static int[] _idealState;
     private int _holePos;
     private int _matrixDimension;
+    private int _costs;
+
+    private PuzzleNode _parent;
 
     public PuzzleNode getParent() {
         return _parent;
@@ -24,9 +28,13 @@ public class PuzzleNode {
         return _matrix;
     }
 
-    private PuzzleNode _parent;
+    public int getCosts() {
+        return _costs;
+    }
 
-
+    public void setCosts(int _costs) {
+        this._costs = _costs;
+    }
 
     public PuzzleNode(int[] matrix){
         _matrix = matrix;
@@ -93,7 +101,13 @@ public class PuzzleNode {
         return 0;
     }
     public int getHammingDistance(){
-        return 0;
+        int wrongPositions = 0;
+        for(int i = 0; i < _matrix.length; i++){
+            if(_matrix[i] != _idealState[i]){
+                wrongPositions++;
+            }
+        }
+        return wrongPositions;
     }
 
     public int getHole(){
@@ -128,6 +142,21 @@ public class PuzzleNode {
             lineBreakCounter++;
         }
         return out.toString();
+    }
+
+    @Override
+    public boolean equals(Object o){
+        if(o == null){
+            return false;
+        } else{
+            PuzzleNode pn = (PuzzleNode) o;
+            return Arrays.equals(_matrix, pn.getMatrix());
+        }
+    }
+
+    @Override
+    public int hashCode(){
+        return Arrays.hashCode(_matrix);
     }
 
 

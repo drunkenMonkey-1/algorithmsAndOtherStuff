@@ -1,14 +1,12 @@
 package fhv.at.mwi.eight_puzzle;
 
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Stack;
+import java.util.*;
 
 public class DFS_Solver {
 
 
     private Stack<PuzzleNode> nodes = new Stack<>();
-    private LinkedList<PuzzleNode> _closedList = new LinkedList<>();
+    private HashSet<PuzzleNode> _closedList = new HashSet<>();
 
     public void solve(PuzzleNode node){
         System.out.println(node.toString());
@@ -19,12 +17,8 @@ public class DFS_Solver {
         }
         LinkedList<PuzzleNode> neighbours = new LinkedList<>(node.getNeighbourNodes());
         for(int i = 0; i < neighbours.size(); i++){
-            Iterator<PuzzleNode> cli = _closedList.iterator();
-            while(cli.hasNext()){
-                PuzzleNode nextNode = cli.next();
-                if(!nextNode.isIdeal(neighbours.get(i).getMatrix())){
-                    nodes.push(neighbours.get(i));
-                }
+            if(!_closedList.contains(neighbours.get(i))){
+                nodes.push(neighbours.get(i));
             }
         }
         while(!nodes.isEmpty()){
