@@ -7,12 +7,7 @@ import java.util.*;
 
 public class AStarSolver extends Solver implements IAlgorithm<List<PuzzleNode>>{
 
-    private PriorityQueue<PuzzleNode> _pqueue = new PriorityQueue<>(new Comparator<PuzzleNode>() {
-        @Override
-        public int compare(PuzzleNode o1, PuzzleNode o2) {
-            return Integer.compare( _heuristic.getCosts(o1), _heuristic.getCosts(o2));
-        }
-    });
+    private PriorityQueue<PuzzleNode> _pqueue = new PriorityQueue<>(Comparator.comparingInt(PuzzleNode::getCosts));
     private HashSet<PuzzleNode> _closedList = new HashSet<>();
     private IHeuristics _heuristic;
     private int _estimatedExpandOperations = 0;

@@ -12,7 +12,7 @@ public class PuzzleNode {
     public static int[] _idealState;
     private int _holePos;
     private int _matrixDimension;
-    private int _costs;
+    private int _costs = 0;
 
     private PuzzleNode _parent;
 
