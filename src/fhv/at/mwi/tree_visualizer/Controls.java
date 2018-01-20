@@ -1,13 +1,16 @@
 package fhv.at.mwi.tree_visualizer;
 
+import javafx.collections.FXCollections;
 import javafx.geometry.Insets;
 import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class Controls {
 
@@ -36,6 +39,12 @@ public class Controls {
         TextField newField = new TextField(fieldDefaultText);
         ribbonGridPane.add(newField, _counter++, 0);
         return newField;
+    }
+
+    public ChoiceBox addChoiceBox(List<String> options){
+        ChoiceBox cb = new ChoiceBox(FXCollections.observableArrayList(options));
+        ribbonGridPane.add(cb, _counter++, 0);
+        return cb;
     }
 
     public Group getControlsGroup(){

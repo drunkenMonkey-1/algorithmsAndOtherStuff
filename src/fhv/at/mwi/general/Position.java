@@ -5,6 +5,7 @@ import java.util.Comparator;
 public class Position implements Comparator<Position>{
     private int _x;
     private int _y;
+    private int _property;
 
     public Position(int x, int y){
         _x = x;
@@ -27,11 +28,27 @@ public class Position implements Comparator<Position>{
         this._y = _y;
     }
 
+    public int getProperty() {
+        return _property;
+    }
+
+    public void setProperty(int _property) {
+        this._property = _property;
+    }
+
     public int rightMostElement(Position o2){
         if(o2.get_y() >= _y && o2.get_x() >= _x){
             return 1;
         }
         return -1;
+    }
+
+    public int positionToArrayIndex(int qsize){
+        return (qsize * _y) + _x;
+    }
+
+    public static Position arrayIndexToPosition(int pos, int qsize){
+        return new Position(pos % qsize, pos / qsize);
     }
 
     @Override
